@@ -1,0 +1,15 @@
+* {
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+    margin: 0;
+    padding: 0;
+}
+
+:root {
+    --black: #000000;
+    --white: #ffffff;
+    --green: #6AB187;
+    --blue: #20948B;
+    --orange: #DE7A22;
+    --sand: #F4CC70;
+}
