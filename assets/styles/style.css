@@ -25,7 +25,6 @@
 
 html {
     font-size: 20px;
-    background-color: aquamarine;
 }
 
 .menu {
@@ -197,6 +196,69 @@ ul.menu-nav.show, a.menu-logo.show {
     content: '⯆';
     padding-left: 5%;
 }
+
+
+/* FOOTER MOBILE */
+
+footer {
+    height: auto;
+    color: var(--white);
+    background-color: var(--blue);
+    padding: 3% 10%;
+    grid-template-areas:
+        "name"
+        "icons"
+        "info"
+    ;
+}
+
+.footer-elm {
+    text-align: center;
+}
+
+.footer-icon {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.icons {
+    grid-area: icons;
+    display: flex;
+    justify-content: space-around;
+    width: 40%;
+    margin: 0 auto;
+}
+
+.name {
+    grid-area: name;
+}
+
+.info {
+    grid-area: info;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+.footer-grid {
+    display: grid;
+    text-align: center;
+}
+
+.icon-size {
+    font-size: 1.5rem;
+}
+
+.footer-hidden {
+    display: none;
+}
+
+.footer-item {
+    padding-top: 3%;
+}
+
+/* END OF FOOTER MOBILE */
+
 
 @media screen and (min-width: 1024px) {
     html {
