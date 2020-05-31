@@ -13,3 +13,60 @@
     --orange: #DE7A22;
     --sand: #F4CC70;
 }
+
+/* FOOTER MOBILE */
+
+footer {
+    height: 150px;
+    color: var(--white);
+    background-color: var(--blue);
+}
+
+.footer_elm {
+    text-align: center;
+}
+
+.footer_icon {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.icons {
+    grid-area: icons;
+}
+
+.name {
+    grid-area: name;
+}
+
+.info {
+    grid-area: info;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+.footer_grid {
+    display: grid;
+    text-align: center;
+}
+
+footer {
+    padding: 3% 10%;
+    gap: 12%;
+    grid-template-areas:
+        "name"
+        "icons"
+        "info"
+    ;
+}
+
+.icon_size {
+    font-size: 1.5rem;
+}
+
+.footer_hidden {
+    display: none;
+}
+
+/* END OF FOOTER MOBILE */
