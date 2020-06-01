@@ -55,7 +55,7 @@ a {
     font-size: 1rem;
 }
 
-
+/* MENU STYLING */
 .menu {
     display: flex;
     flex-direction: column;
@@ -230,9 +230,10 @@ a.menu-logo.show {
     content: '⯆';
     padding-left: 5%;
 }
+/* MENU STYLING END */
+
 
 /* HERO IMAGE */
-
 .hero-image {
     position: relative;
 }
@@ -254,7 +255,8 @@ a.menu-logo.show {
     opacity: 0.7;
 }
 
-/* styling of landing page (Mobile)*/
+
+/* LANDING PAGE*/
 
 .flex {
     display: flex;
@@ -276,6 +278,8 @@ a.menu-logo.show {
 .flex-normal>p {
     margin: auto 5px;
 }
+
+/* All grids */
 
 .primary-grid {
     margin-top: 5%;
@@ -332,6 +336,7 @@ a.menu-logo.show {
         '. . . . .'
     ;
 }
+/* All grids end */
 
 .sports-a {
     grid-area: s-a;
@@ -494,13 +499,13 @@ a.menu-logo.show {
     color: var(--orange);
 }
 
-/*GLOBAL MARGIN THINGY*/
+/*GLOBAL MARGIN */
 
 .section-margin {
     margin-top: 10%;
 }
 
-/*CAROUSEL THINGY*/
+/* TESTIMONIALS */
 
 .mySlides {
     display: none;
@@ -691,10 +696,10 @@ select {
     border-radius: 5px;
     box-sizing: border-box;
 }
+/* END OF FOOTER */
 
-/* END OF FOOTER MOBILE */
 
-
+/* QUERIES START */
 @media screen and (min-width: 1024px) {
     html {
         font-size: 10px;
