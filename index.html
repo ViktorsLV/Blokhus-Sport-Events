@@ -3,12 +3,13 @@
 
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0 user-scalable=no">
     <link href="https://fonts.googleapis.com/css2?family=Montserrat&family=Open+Sans&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="assets/styles/style.css">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.13.0/css/all.css"
         integrity="sha384-Bfad6CLCknfcloXFOyFnlgtENryhrpZCe29RTifKEixXQZ38WheV+i/6YWSzkz3V" crossorigin="anonymous">
     <script src="assets/scripts/main.js" defer></script>
+    <script src="assets/scripts/slider.js" defer></script>
     <title>Document</title>
 </head>
 
@@ -59,7 +60,7 @@
                     Europe's best beaches, the theme park, several galleries, and much more.</p>
             </article>
         </section>
-        <section class="primary-grid2">
+        <section class="primary-grid2 section-margin">
             <div class="element-detail2"></div>
             <h2 class="text-primary article-h2">Upcoming Events</h2>
             <section class="flex event-box">
@@ -117,7 +118,32 @@
                 <a class="all-btn text-secondary events-btn" href="#">See all events</a>
             </section>
         </section>
-        <section class="primary-grid3">
+        <section class="primary-grid4 section-margin">
+            <h2 class="carousel-h2 text-primary">What do <span class="underlined-span">people say</span></h2>
+            <i class="fas fa-chevron-left fa-3x arrow-left" onclick="plusSlides(-1)"></i>
+            <div class="mySlides carousel-img">
+                <img src="assets/images/article.jpg" alt="">
+                <p class="text-secondary"><i>"Experience the amazing holiday town in North Jutland"
+                    <br />-Martin</i></p>
+            </div>
+            <div class="mySlides carousel-img">
+                <img src="assets/images/article.jpg" alt="">
+                <p class="text-secondary"><i>"Experience the amazing holiday town in North Jutland"
+                    <br />-Boby</i></p>
+            </div>
+            <div class="mySlides carousel-img">
+                <img src="assets/images/article.jpg" alt="">
+                <p class="text-secondary"><i>"Experience the amazing holiday town in North Jutland"
+                    <br />-Karen</i></p>
+            </div>
+            <i class="fas fa-chevron-right fa-3x arrow-right" onclick="plusSlides(1)"></i>
+            <div class="flex-normal carousel-dots flex-just-cent">
+                <span class="dot" onclick="currentSlide(1)"></span>
+                <span class="dot" onclick="currentSlide(2)"></span>
+                <span class="dot" onclick="currentSlide(3)"></span>
+            </div>
+        </section>
+        <section class="primary-grid3 section-margin">
             <div class="element-detail3"></div>
             <h2 class="sports-h2 text-primary">Sports in Blokhus</h2>
             <div class="flex-normal flex-wrap event-box2">
@@ -148,13 +174,13 @@
             </div>
             <a class="all-btn sports-a text-secondary" href="">See all sports</a>
         </section>
-        <section class="membership-box">
+        <section class="membership-box section-margin">
             <div class="message-box">
                 <p class="text-secondary">Do you want to be a part of biggest Nothern Jutland sport community?</p>
                 <a class="big-btn text-secondary" href="#">Become a member now</a>
             </div>
         </section>
-        <section class="primary-grid2">
+        <section class="primary-grid2 section-margin">
             <div class="element-detail2"></div>
             <h2 class="text-primary article-h2">Past Events</h2>
             <section class="flex event-box">
@@ -212,7 +238,7 @@
                 <a class="all-btn text-secondary events-btn" href="#">See all events</a>
             </section>
         </section>
-        <section class="newsletter-box">
+        <section class="newsletter-box section-margin">
             <div class="message-box">
                 <p class="text-secondary">Do you want to get notified about events and opportunities that Blokhus
                     provides? Sign up for the Newsletter!</p>
