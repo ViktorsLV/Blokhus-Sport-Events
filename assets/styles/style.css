@@ -59,6 +59,7 @@ a {
     width: 100%;
     visibility: hidden;
     background: var(--blue);
+    z-index: 10;
 }
 
 header {
