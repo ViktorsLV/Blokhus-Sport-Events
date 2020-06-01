@@ -19,7 +19,7 @@
     --white: #ffffff;
     --green: #6AB187;
     --blue: #20948B;
-    --orange: #DE7A22;
+    --orange: #FF8C26;
     --sand: #F4CC70;
     --gray: #585858;
     --dark-gray: #292929;
@@ -442,18 +442,22 @@ a.menu-logo.show {
     color: var(--white);
     text-align: center;
     text-decoration: none;
-
+    box-shadow: 0px 4px 8px rgba(141, 58, 58, 0.25);
 }
 
 .article-background {
-    background-color: var(--white);
+    background-color: #FCFCFC;
     /* border: 2px solid var(--black); */
     width: 130px;
     height: 130px;
     border-radius: 25%;
     color: var(--gray);
     text-decoration: none;
-    box-shadow: 2px 2px 5px black;
+    box-shadow:
+    0 7.1px 6.2px -15px rgba(0, 0, 0, 0.55),
+    0 20.8px 14px -15px rgba(0, 0, 0, 0.127),
+    0 20px 24px -15px rgba(0, 0, 0, 0.145)
+  ;
 }
 
 .article-background:nth-child(1), .article-background:nth-child(2) {
@@ -479,6 +483,7 @@ a.menu-logo.show {
     text-align: center;
     text-transform: uppercase;
     text-decoration: none;
+    box-shadow: 0px 4px 8px rgba(141, 58, 58, 0.25);
 }
 
 .events-btn {
@@ -629,7 +634,8 @@ footer {
 
 
 /* MEMBERSHIP+NEWSLETTER BOX */
-.membership-box, .newsletter-box {
+.membership-box,
+.newsletter-box {
     margin-top: 8%;
     background-image: url(../images/membership_box.jpg);
     background-repeat: no-repeat;
@@ -662,6 +668,7 @@ footer {
     text-align: center;
     text-transform: uppercase;
     text-decoration: none;
+    box-shadow: 0px 4px 8px rgba(141, 58, 58, 0.25);
 }
 
 
@@ -793,5 +800,3 @@ select {
         color: var(--sand);
     }
 }
-
-
