@@ -688,6 +688,68 @@ ul.menu-nav.show, a.menu-logo.show {
     '. m-btn .';
 }
 
+.article-grid {
+    position: relative;
+    display: grid;
+    margin-top: 5%;
+    grid-template-columns: 5% 5% 1fr 5% 5%;
+    grid-template-rows: minmax(min-content, max-content);
+    text-align: left;
+    grid-template-areas: 
+    '. icon1 i-info . .'
+    '. . t-info . .'
+    ;
+}
+
+
+.icon1 {
+    grid-area: icon1;
+}
+
+.article-icon-info {
+    grid-area: i-info;
+}
+
+.article-icon-info i {
+    margin-right: 3%;
+}
+
+.article-text-info {
+    grid-area: t-info;
+}
+
+.map-grid {
+    position: relative;
+    display: grid;
+    grid-template-columns: 5% 1fr 5%;
+    grid-template-rows: minmax(min-content, max-content);
+    text-align: center;
+    grid-template-areas: 
+    '. map .'
+    '. media .';
+}
+
+
+.map-img {
+    grid-area: map;
+    width: 100%;
+    height: 200px;
+    margin-top: 5%;
+}
+
+.map-media {
+    grid-area: media;
+    margin-top: 5%;
+    justify-content: flex-end;  
+    color: var(--gray); 
+}
+
+.map-media i {
+    margin-left: 5%;
+    color: var(--orange);
+}
+
+
 .subscribe {
     grid-area: subscribe; 
     padding: 5%;
@@ -748,6 +810,15 @@ ul.menu-nav.show, a.menu-logo.show {
 }
 .subscribe h3, .subscribe form, .subscribe a {
     text-align: center;
+}
+
+/*Upcoming Article*/
+
+.article-author {
+    margin-top: 15%;
+    text-align: right;
+    padding: 0 10%;
+    color: var(--gray);
 }
 
 /* FOOTER MOBILE */
