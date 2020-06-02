@@ -1,13 +1,231 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="assets/css/style.css">
-    <script src="" defer></script>
-    <title>Document</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0 user-scalable=no">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat&family=Open+Sans&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="assets/styles/style.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.13.0/css/all.css"
+        integrity="sha384-Bfad6CLCknfcloXFOyFnlgtENryhrpZCe29RTifKEixXQZ38WheV+i/6YWSzkz3V" crossorigin="anonymous">
+    <script src="assets/scripts/main.js" defer></script>
+    <link rel="shortcut icon" href="assets/images/logo.png" type="image/x-icon">
+    <title>Sports | Blokhus Sport & Events</title>
 </head>
+
 <body>
-    
+    <header class="text-primary">
+        <div class="menu-btn">
+            <div class="btn-line"></div>
+            <div class="btn-line"></div>
+            <div class="btn-line"></div>
+        </div>
+
+        <a href="index.html" class="menu-logo"><img src="assets/images/logo.png" class="logo"
+                alt="Blokhus Sport & Events"></a>
+
+        <!-- MENU -->
+        <nav class="menu">
+            <ul class="menu-nav">
+                <li class="nav-item">
+                    <a href="index.html" class="nav-link">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#" class="nav-link current">Sports</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#" class="nav-link">Events</a>
+                    <ul class="menu-nav-dropdown">
+                        <li class="nav-dropdown-item"><a href="upcoming-events.html"
+                                class="nav-dropdown-link">Upcoming&nbsp;Events</a>
+                        </li>
+                        <li class="nav-dropdown-item"><a href="past-events.html"
+                                class="nav-dropdown-link">Past&nbsp;Events</a></li>
+                    </ul>
+                </li>
+                <li class="nav-item">
+                    <a href="#" class="nav-link">Memberships</a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="upcoming-events-main">
+        <!-- HERO -->
+        <section class="hero-image">
+            <img class="hero" src="assets/images/hero_mobile.jpg" alt="Blokhus Sport and Events">
+            <h1 class="sports-text text-primary">Upcoming Events</h1>
+        </section>
+
+        <section class="filter">
+            <h3 class="text-primary">Filter by:</h3>
+            <select name="Categories" id="categories">
+                <option value="sports">Sports</option>
+                <option value="workshops">Workshops</option>
+                <option value="charity">Charity events</option>
+                <option value="others">Others</option>
+            </select>
+
+            <select name="Month" id="month">
+                <option value="January">January</option>
+                <option value="February">February</option>
+                <option value="March">March</option>
+                <option value="April">April</option>
+                <option value="May">May</option>
+                <option value="June">June</option>
+                <option value="July">July</option>
+                <option value="August">August</option>
+                <option value="September">September</option>
+                <option value="October">October</option>
+                <option value="November">November</option>
+                <option value="december">December</option>
+            </select>
+
+        </section>
+
+        <!-- EVENT ARTICLES -->
+        <section class="event-grid section-margin">
+            <div class="element-detail2"></div>
+            <h2 class="text-primary article-h2">Upcoming Events</h2>
+            <section class="flex event-box">
+                <article class="article-preview-grid">
+                    <img class="grid-image" src="assets/images/article.jpg" alt="article image">
+                    <h3 class="grid-line-one text-primary">Swim season opener</h3>
+                    <div class="grid-line-two">
+                        <div class="flex-normal">
+                            <i class="fas fa-map-marker-alt fa-2x"></i>
+                            <p class="text-secondary">Blokhus swimming pool</p>
+                        </div>
+                    </div>
+                    <div class="grid-line-three">
+                        <div class="flex-normal fifty50">
+                            <i class="fas fa-calendar-alt fa-2x"></i>
+                            <p class="text-secondary">24/06/2020</p>
+                        </div>
+                        <a class="article-btn fifty50 text-secondary" href="">Read&nbsp;more</a>
+                    </div>
+                </article>
+                <article class="article-preview-grid">
+                    <img class="grid-image" src="assets/images/article.jpg" alt="article image">
+                    <h3 class="grid-line-one text-primary">Hune 1 last game</h3>
+                    <div class="grid-line-two">
+                        <div class="flex-normal">
+                            <i class="fas fa-map-marker-alt fa-2x"></i>
+                            <p class="text-secondary">Hune Stadium</p>
+                        </div>
+                    </div>
+                    <div class="grid-line-three">
+                        <div class="flex-normal fifty50">
+                            <i class="fas fa-calendar-alt fa-2x"></i>
+                            <p class="text-secondary">11/06/2020</p>
+                        </div>
+                        <a class="article-btn fifty50 text-secondary" href="">Read&nbsp;more</a>
+                    </div>
+                </article>
+                <article class="article-preview-grid">
+                    <img class="grid-image" src="assets/images/article.jpg" alt="article image">
+                    <h3 class="grid-line-one text-primary">Sauna next to beach</h3>
+                    <div class="grid-line-two">
+                        <div class="flex-normal">
+                            <i class="fas fa-map-marker-alt fa-2x"></i>
+                            <p class="text-secondary">Blokhus beach</p>
+                        </div>
+                    </div>
+                    <div class="grid-line-three">
+                        <div class="flex-normal fifty50">
+                            <i class="fas fa-calendar-alt fa-2x"></i>
+                            <p class="text-secondary">29/06/2020</p>
+                        </div>
+                        <a class="article-btn fifty50 text-secondary" href="">Read&nbsp;more</a>
+                    </div>
+                </article>
+                <article class="article-preview-grid">
+                    <img class="grid-image" src="assets/images/article.jpg" alt="article image">
+                    <h3 class="grid-line-one text-primary">Sauna next to beach</h3>
+                    <div class="grid-line-two">
+                        <div class="flex-normal">
+                            <i class="fas fa-map-marker-alt fa-2x"></i>
+                            <p class="text-secondary">Blokhus beach</p>
+                        </div>
+                    </div>
+                    <div class="grid-line-three">
+                        <div class="flex-normal fifty50">
+                            <i class="fas fa-calendar-alt fa-2x"></i>
+                            <p class="text-secondary">29/06/2020</p>
+                        </div>
+                        <a class="article-btn fifty50 text-secondary" href="">Read&nbsp;more</a>
+                    </div>
+                </article>
+                <article class="article-preview-grid">
+                    <img class="grid-image" src="assets/images/article.jpg" alt="article image">
+                    <h3 class="grid-line-one text-primary">Sauna next to beach</h3>
+                    <div class="grid-line-two">
+                        <div class="flex-normal">
+                            <i class="fas fa-map-marker-alt fa-2x"></i>
+                            <p class="text-secondary">Blokhus beach</p>
+                        </div>
+                    </div>
+                    <div class="grid-line-three">
+                        <div class="flex-normal fifty50">
+                            <i class="fas fa-calendar-alt fa-2x"></i>
+                            <p class="text-secondary">29/06/2020</p>
+                        </div>
+                        <a class="article-btn fifty50 text-secondary" href="">Read&nbsp;more</a>
+                    </div>
+                </article>
+                <article class="article-preview-grid">
+                    <img class="grid-image" src="assets/images/article.jpg" alt="article image">
+                    <h3 class="grid-line-one text-primary">Sauna next to beach</h3>
+                    <div class="grid-line-two">
+                        <div class="flex-normal">
+                            <i class="fas fa-map-marker-alt fa-2x"></i>
+                            <p class="text-secondary">Blokhus beach</p>
+                        </div>
+                    </div>
+                    <div class="grid-line-three">
+                        <div class="flex-normal fifty50">
+                            <i class="fas fa-calendar-alt fa-2x"></i>
+                            <p class="text-secondary">29/06/2020</p>
+                        </div>
+                        <a class="article-btn fifty50 text-secondary" href="">Read&nbsp;more</a>
+                    </div>
+                </article>
+            </section>
+        </section>
+
+        <!-- ARROWS -->
+        <div class="arrows-next-prev text-secondary">
+            <div class="previous"><i class="fas fa-chevron-left fa-1x arrow-left"></i> Prev</div>
+            <div class="next">Next <i class="fas fa-chevron-right fa-1x arrow-right"></i></div>
+        </div>
+    </main>
+
+    <!-- FOOTER -->
+    <footer class="footer-grid text-secondary">
+        <p class="name">Blokhus Sport and Events</p>
+        <ul class="footer-hidden">
+            <li>HOME</li>
+            <li>UPCOMING EVENTS</li>
+            <li>PAST EVENTS</li>
+            <li>SPORTS</li>
+            <li>MEMBERSHIP</li>
+        </ul>
+        <div class="sponsors footer-hidden footer-item">
+            <img src="" alt="sponsor1">
+            <img src="" alt="sponsor2">
+            <img src="" alt="sponsor3">
+            <img src="" alt="sponsor4">
+        </div>
+        <div class="footer-icon icons icon-size footer-item">
+            <i class="fab fa-facebook"></i>
+            <i class="fab fa-facebook-messenger"></i>
+            <i class="fab fa-instagram"></i>
+        </div>
+        <div class="info footer-item">
+            <p>English</p>
+            <p>Copyright © 2020</p>
+        </div>
+    </footer>
 </body>
+
 </html>
