@@ -9,8 +9,9 @@
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.13.0/css/all.css"
         integrity="sha384-Bfad6CLCknfcloXFOyFnlgtENryhrpZCe29RTifKEixXQZ38WheV+i/6YWSzkz3V" crossorigin="anonymous">
     <script src="assets/scripts/main.js" defer></script>
+    <script src="assets/scripts/sliderEvent.js" defer></script>
     <link rel="shortcut icon" href="assets/images/logo.png" type="image/x-icon">
-    <title>Past Events | Blokhus Sport & Events</title>
+    <title>Past Event | Blokhus Sport & Events</title>
 </head>
 
 <body>
@@ -28,19 +29,17 @@
         <nav class="menu">
             <ul class="menu-nav">
                 <li class="nav-item">
-                    <a href="index.html" class="nav-link">Home</a>
+                    <a href="index.html" class="nav-link current">Home</a>
                 </li>
                 <li class="nav-item">
-                    <a href="#" class="nav-link">Sports</a>
+                    <a href="sports.html" class="nav-link">Sports</a>
                 </li>
                 <li class="nav-item">
-                    <a href="#" class="nav-link current">Events</a>
+                    <a href="#" class="nav-link">Events</a>
                     <ul class="menu-nav-dropdown">
-                        <li class="nav-dropdown-item current"><a href="upcoming-events.html"
-                                class="nav-dropdown-link">Upcoming&nbsp;Events</a>
+                        <li class="nav-dropdown-item"><a href="upcoming-events.html" class="nav-dropdown-link">Upcoming&nbsp;Events</a>
                         </li>
-                        <li class="nav-dropdown-item"><a href="past-events.html"
-                                class="nav-dropdown-link">Past&nbsp;Events</a></li>
+                        <li class="nav-dropdown-item"><a href="past-events.html" class="nav-dropdown-link">Past&nbsp;Events</a></li>
                     </ul>
                 </li>
                 <li class="nav-item">
@@ -50,37 +49,27 @@
         </nav>
     </header>
 
-    <main class="upcoming-events-main">
+    <main class="past-article-main">
         <!-- HERO -->
         <section class="hero-image">
             <img class="hero" src="assets/images/hero_mobile.jpg" alt="Blokhus Sport and Events">
-            <h1 class="sports-text text-primary">Past Events</h1>
+            <h1 class="text-primary hero-text">Blokhus Sport and Events</h1>
         </section>
-
-        <section class="filter">
-            <h3 class="text-primary">Filter by:</h3>
-            <select name="Categories" id="categories">
-                <option value="sports">Sports</option>
-                <option value="workshops">Workshops</option>
-                <option value="charity">Charity events</option>
-                <option value="others">Others</option>
-            </select>
-
-            <select name="Month" id="month">
-                <option value="January">January</option>
-                <option value="February">February</option>
-                <option value="March">March</option>
-                <option value="April">April</option>
-                <option value="May">May</option>
-                <option value="June">June</option>
-                <option value="July">July</option>
-                <option value="August">August</option>
-                <option value="September">September</option>
-                <option value="October">October</option>
-                <option value="November">November</option>
-                <option value="december">December</option>
-            </select>
-
+        <section class="explore-grid">
+            <div class="element-detail"></div>
+            <article class="article-text">
+                <h2 class="text-primary">The event:</h2>
+                <p class="text-secondary">Beach Faith on July 26 and will definitely end with Blokhus Marathon on Sunday, August 2 here in 2020.
+                    Jammerbugten has many good outdoor activities. The Outdoor Festival will help put more focus on all the activities, which will hopefully benefit the many tourists in the area but and the locals.</p>
+            </article>
+        </section>
+        <section class="explore-grid">
+            <div class="element-detail"></div>
+            <article class="article-text">
+                <h2 class="text-primary">The event:</h2>
+                <p class="text-secondary">Beach Faith on July 26 and will definitely end with Blokhus Marathon on Sunday, August 2 here in 2020.
+                    Jammerbugten has many good outdoor activities. The Outdoor Festival will help put more focus on all the activities, which will hopefully benefit the many tourists in the area but and the locals.</p>
+            </article>
         </section>
 
         <!-- EVENT ARTICLES -->
@@ -139,65 +128,36 @@
                         <a class="article-btn fifty50 text-secondary" href="">Read&nbsp;more</a>
                     </div>
                 </article>
-                <article class="article-preview-grid">
-                    <img class="grid-image" src="assets/images/article.jpg" alt="article image">
-                    <h3 class="grid-line-one text-primary">Sauna next to beach</h3>
-                    <div class="grid-line-two">
-                        <div class="flex-normal">
-                            <i class="fas fa-map-marker-alt fa-2x"></i>
-                            <p class="text-secondary">Blokhus beach</p>
-                        </div>
-                    </div>
-                    <div class="grid-line-three">
-                        <div class="flex-normal fifty50">
-                            <i class="fas fa-calendar-alt fa-2x"></i>
-                            <p class="text-secondary">29/06/2020</p>
-                        </div>
-                        <a class="article-btn fifty50 text-secondary" href="">Read&nbsp;more</a>
-                    </div>
-                </article>
-                <article class="article-preview-grid">
-                    <img class="grid-image" src="assets/images/article.jpg" alt="article image">
-                    <h3 class="grid-line-one text-primary">Sauna next to beach</h3>
-                    <div class="grid-line-two">
-                        <div class="flex-normal">
-                            <i class="fas fa-map-marker-alt fa-2x"></i>
-                            <p class="text-secondary">Blokhus beach</p>
-                        </div>
-                    </div>
-                    <div class="grid-line-three">
-                        <div class="flex-normal fifty50">
-                            <i class="fas fa-calendar-alt fa-2x"></i>
-                            <p class="text-secondary">29/06/2020</p>
-                        </div>
-                        <a class="article-btn fifty50 text-secondary" href="">Read&nbsp;more</a>
-                    </div>
-                </article>
-                <article class="article-preview-grid">
-                    <img class="grid-image" src="assets/images/article.jpg" alt="article image">
-                    <h3 class="grid-line-one text-primary">Sauna next to beach</h3>
-                    <div class="grid-line-two">
-                        <div class="flex-normal">
-                            <i class="fas fa-map-marker-alt fa-2x"></i>
-                            <p class="text-secondary">Blokhus beach</p>
-                        </div>
-                    </div>
-                    <div class="grid-line-three">
-                        <div class="flex-normal fifty50">
-                            <i class="fas fa-calendar-alt fa-2x"></i>
-                            <p class="text-secondary">29/06/2020</p>
-                        </div>
-                        <a class="article-btn fifty50 text-secondary" href="">Read&nbsp;more</a>
-                    </div>
-                </article>
+                <a class="all-btn text-secondary events-btn" href="#">See all events</a>
             </section>
         </section>
 
-        <!-- ARROWS -->
-        <div class="arrows-next-prev text-secondary">
-            <div class="previous"><i class="fas fa-chevron-left fa-1x arrow-left"></i> Prev</div>
-            <div class="next">Next <i class="fas fa-chevron-right fa-1x arrow-right"></i></div>
-        </div>
+        
+
+        <!-- TESTIMONIALS -->
+        <section class="gallery-grid section-margin">
+            <h2 class="carousel-h2 text-primary gallery-h2"><span class="underlined-span">Gallery</span></h2>
+            <i class="fas fa-chevron-left fa-3x arrow-left" onclick="plusDivs(-1)"></i>
+            <div class="carousel-img past-event-images">
+                <img class="mySlidesEvent" src="assets/images/article.jpg" alt="">
+                <img class="mySlidesEvent" src="assets/images/article.jpg" alt="">
+                <img class="mySlidesEvent" src="assets/images/article.jpg" alt="">
+            </div>
+            <i class="fas fa-chevron-right fa-3x arrow-right" onclick="plusDivs(1)"></i>
+            <div class="flex-normal map-media text-secondary">
+                <p>Share this event:</p>
+                <i class="fab fa-facebook fa-2x"></i>
+                <i class="fab fa-facebook-messenger fa-2x"></i>
+                <i class="fab fa-instagram fa-2x"></i>
+            </div>
+            <!--<div class="flex-normal carousel-dots flex-just-cent">
+                <span class="dot" onclick="currentSlide(1)"></span>
+                <span class="dot" onclick="currentSlide(2)"></span>
+                <span class="dot" onclick="currentSlide(3)"></span>
+            </div> -->
+        </section>
+
+       
     </main>
 
     <!-- FOOTER -->
