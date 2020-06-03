@@ -1072,3 +1072,8 @@ input[type=text], select {
         color: var(--sand);
     }
 }
+
+/* VIDEO */
+video {
+    width: 100%;
+}
