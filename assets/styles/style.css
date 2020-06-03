@@ -14,6 +14,10 @@
     font-family: 'Open Sans', sans-serif;
 }
 
+.text_special {
+    font-family: 'Josefin Sans', sans-serif;
+}
+
 :root {
     --black: #000000;
     --white: #ffffff;
