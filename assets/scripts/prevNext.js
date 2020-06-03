@@ -1,26 +1,92 @@
-// global JavaScript variables
-var list = new Array();
-var pageList = new Array();
-var currentPage = 1;
-var numberPerPage = 10;
-var numberOfPages = 1;   // calculates the total number of pages
+// // global JavaScript variables
+// var list = document.querySelectorAll(".preview-article");
+// /* var arr = Array.prototype.slice.call(list); */
+// var arr = [];
+// for(var i = 0, n; n = list[i]; ++i) arr.push(n);
+// var pageList = new Array();
+// var currentPage = 1;
+// var numberPerPage = 2;
+// var numberOfPages = 1;   // calculates the total number of pages
+
+
+// // /*TEST list of objects*/
+
+// // function makeList() {
+// //     for (x = 0; x < list.length; x++)
+// //         list.push(list[x]);
+// // }
+
+// // /*executes test list on load of page */
+// // function load() {
+// //     makeList();
+// //     numberOfPages = getNumberOfPages();
+// // }
+    
+// // window.addEventListener('load', load);
+
+// /*Calculates the number of total pages */
+// function getNumberOfPages() {
+//     return Math.ceil(list.length / numberPerPage);
+// }
+
+// /*loads next page */
+// function nextPage() {
+//     currentPage += 1;
+//     loadList();
+// }
+
+// /*loads prev page */
+// function previousPage() {
+//     currentPage -= 1;
+//     loadList();
+// }
+
+// /*loads first page */
+// function firstPage() {
+//     currentPage = 1;
+//     loadList();
+// }
+
+// /*loads last page */
+// function lastPage() {
+//     currentPage = numberOfPages;
+//     loadList();
+// }
+
+// /*dictates which items goes into which page */
+// function loadList() {
+//     var begin = ((currentPage - 1) * numberPerPage);
+//     var end = begin + numberPerPage;
+
+//     pageList = arr.slice(begin, end);
+//     drawList();    // draws out our data
+//     check();         // determines the states of the pagination buttons
+// }
+
+
+// /*Drawing the elements */
+// function drawList() {
+//     document.getElementById("list").innerHTML = "";
+    
+//     for (r = 0; r < pageList.length; r++) {
+//         document.getElementById("list").innerHTML += pageList[r] + "";
+//     }
+// }
+
+// /*disables buttons */
+// function check() {
+//     document.getElementById("next").disabled = currentPage == numberOfPages ? true : false;
+//     document.getElementById("previous").disabled = currentPage == 1 ? true : false;
+//     document.getElementById("first").disabled = currentPage == 1 ? true : false;
+//     document.getElementById("last").disabled = currentPage == numberOfPages ? true : false;
+// }
 
 
 
 
+//https://www.thatsoftwaredude.com/content/9101/custom-javascript-pagination-of-objects  ----- OMG OMG OMG
 
-
-
-
-
-
-
-
-
-
-
-
-
+//https://www.thatsoftwaredude.com/content/6125/how-to-paginate-through-a-collection-in-javascript --- slightly less omg
 
 
 

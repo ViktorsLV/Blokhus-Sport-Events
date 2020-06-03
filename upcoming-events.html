@@ -86,7 +86,7 @@
         <section class="event-grid section-margin">
             <div class="element-detail2"></div>
             <h2 class="text-primary article-h2">Upcoming Events</h2>
-            <section class="flex event-box">
+            <section class="flex event-box" id="list">
                 <article class="article-preview-grid preview-article">
                     <img class="grid-image" src="assets/images/article.jpg" alt="article image">
                     <h3 class="grid-line-one text-primary">Swim season opener</h3>
@@ -210,10 +210,17 @@
         </section>
 
         <!-- ARROWS -->
-        <div class="arrows-next-prev text-secondary">
+        <!-- <div class="arrows-next-prev text-secondary">
             <div class="previous" onclick="minusEvents()"><i class="fas fa-chevron-left fa-1x arrow-left"></i> Prev</div>
             <div class="next" onclick="plusEvents()">Next <i class="fas fa-chevron-right fa-1x arrow-right"></i></div>
+        </div> -->
+        <div class="arrows-next-prev text-secondary">
+            <input type="button" id="first" onclick="firstPage()" value="first" />
+            <input type="button" id="next" onclick="nextPage()" value="next" />
+            <input type="button" id="previous" onclick="previousPage()" value="previous" />
+            <input type="button" id="last" onclick="lastPage()" value="last" />
         </div>
+            
     </main>
 
     <!-- FOOTER -->
