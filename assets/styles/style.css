@@ -1327,6 +1327,10 @@ select {
         text-decoration: none;
     }
     /*Upcoming Article*/
+    .event-grid {
+        grid-template-columns: 10% 1fr 10%;
+    }
+
     .article-grid {
         width: 70%;
         margin: 0 auto;
@@ -1404,7 +1408,7 @@ select {
     }
     .pc-grid-map {
         display: grid;
-        grid-template-columns: 5% 1fr 1fr 5%;
+        grid-template-columns: 10% 1fr 1fr 10%;
         grid-template-rows: minmax(min-content, max-content);
         grid-template-areas: '. pc-e-grid pc-m-grid .';
     }
@@ -1548,6 +1552,24 @@ select {
     }
     .membership-form {
         padding: 2% 20%;
+    }
+
+    /*SPORTS page*/
+    .sports-main .explore-grid {
+        grid-template-columns: 20% 1fr 20%;
+    }
+
+    .sports-grid {
+        grid-template-columns: 20% 1fr 20%;
+    }
+
+    .sports-main .explore-grid .article-text p {
+        width: 60%;
+    }
+
+    .article-background {
+        width: 200px;
+        height: 160px;
     }
 }
 
