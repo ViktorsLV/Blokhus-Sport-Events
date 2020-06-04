@@ -10,6 +10,8 @@
         integrity="sha384-Bfad6CLCknfcloXFOyFnlgtENryhrpZCe29RTifKEixXQZ38WheV+i/6YWSzkz3V" crossorigin="anonymous">
     <script src="assets/scripts/main.js" defer></script>
     <link rel="shortcut icon" href="assets/images/logo.png" type="image/x-icon">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
     <title>Sports | Blokhus Sport & Events</title>
 </head>
 
@@ -74,7 +76,7 @@
         <section class="sports-grid section-margin">
             <div class="element-detail3"></div>
             <h2 class="sports-h2 text-primary">Sports in Blokhus</h2>
-            <div class="flex-normal flex-wrap sports-box">
+            <div class="flex-normal flex-wrap sports-box"   data-aos-delay="100" data-aos="fade-up" data-aos-duration="700">
                 <a class="article-background" href="sport-info.html">
                     <article class="">
                         <i class="far fa-futbol fa-6x"></i>
@@ -155,5 +157,9 @@
         </div>
     </footer>
 </body>
+<script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+<script>
+	AOS.init();
+	</script>
 
 </html>
