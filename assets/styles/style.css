@@ -878,6 +878,14 @@ ul.menu-nav.show, a.menu-logo.show {
     color: var(--gray);
 }
 
+.article-icon-info .grid-i1, .article-icon-info .grid-i2, .article-icon-info .grid-i3, .article-icon-info .grid-i4 {
+    display: none;
+}
+
+.events-btn-pc {
+    display: none;
+}
+
 /*PAST Event Article*/
 
 .past-event-images img {
@@ -1128,6 +1136,16 @@ input[type=text], select {
     input[type="text"] {
         margin: 18px 0 36px 0;
     }
+
+    /*Upcoming article*/
+
+    .grid-i1, .grid-i2, .grid-i3, .grid-i4 {
+        display: none;
+    }
+
+    .events-btn-pc {
+        display: none;
+    }
     
 }
 
@@ -1253,6 +1271,10 @@ input[type=text], select {
         grid-area: pc-e-grid;
     }
 
+    .pc-map-grid {
+        grid-area: pc-m-grid;
+    }
+
     .hero-image {
         grid-area: video;
         margin: 50px auto 0 auto;
@@ -1261,6 +1283,179 @@ input[type=text], select {
     .quote {
         grid-area: quote;
         display: grid;
+    }
+
+    /*Upcoming Article*/
+
+    .article-grid {
+        width: 70%;
+        margin: 0 auto;
+        margin-top: 2%;
+        border: 3px solid var(--blue);
+        grid-template-areas: 
+        '. icon1 i-info . .'
+        '. . t-info . .'
+        ;
+    }
+
+    .article-icon-info {
+        display: grid;
+        grid-template-columns: 5% 1fr 5% 1fr;
+        grid-template-rows: minmax(min-content, max-content);
+        grid-template-areas: 
+        'g-i1 g-p1 g-i2 g-p3'
+        'g-i3 g-p2 g-i4 g-p4'
+        ;
+    }
+
+    .grid-p1 {
+        grid-area: g-p1;
+        margin-top: 3%;
+    }
+
+    .grid-p2 {
+        grid-area: g-p2;
+        margin-top: 3%;
+    }
+
+    .grid-p3 {
+        grid-area: g-p3;
+        margin-top: 3%;
+    }
+
+    .grid-p4 {
+        grid-area: g-p4;
+        margin-top: 3%;
+    }
+
+    .icon1 {
+        display: none;
+    }
+
+    .article-icon-info i {
+        margin-top: 35%;
+    }
+
+    .grid-i1 {
+        grid-area: g-i1;
+        
+    }
+
+    .grid-i2 {
+        grid-area: g-i2;
+        margin-top: 3%;
+    }
+
+    .grid-i3 {
+        grid-area: g-i3;
+        margin-top: 3%;
+    }
+
+    .grid-i4 {
+        grid-area: g-i4;
+        margin-top: 3%;
+    }
+
+    .article-icon-info .grid-i1, .article-icon-info .grid-i2, .article-icon-info .grid-i3, .article-icon-info .grid-i4 {
+        display: grid;
+    }
+
+    .article-text-info {
+        display: grid;
+        grid-template-columns: 5% 1fr 5% 1fr;
+        grid-template-rows: minmax(min-content, max-content);
+        grid-template-areas: 
+        '. g-t1 . g-t2'
+        ;
+    }
+
+    .grid-t1 {
+        grid-area: g-t1;
+        margin-top: 3%;
+        margin-bottom: 3%;
+    }
+
+    .grid-t2 {
+        grid-area: g-t2;
+        margin-top: 3%;
+        margin-bottom: 3%;
+    }
+
+    .article-author {
+        margin-top: 2%;
+    }
+
+    .pc-grid-map {
+        display: grid;
+        grid-template-columns: 5% 1fr 1fr 5%;
+        grid-template-rows: minmax(min-content, max-content);
+        grid-template-areas: 
+        '. pc-e-grid pc-m-grid .'
+        ;
+    }
+
+    .event-box {
+        display: flex;
+        flex-direction: row;
+    }
+
+    .article-preview-grid {
+        width: 50%;
+    }
+
+    .events-btn-pc {
+        display: block;
+        grid-area: btn;
+    }
+
+    .events-btn {
+        display: none;
+    }
+
+    .article-preview-grid {
+        margin-bottom: 3%;
+        padding-bottom: 3%;
+        margin-left: 2%;
+        margin-right: 2%;
+        border-bottom: 1px solid rgba(0, 0, 0, 0.5);
+        display: grid;
+        grid-template-columns: 25% 25% 25% 25%;
+        grid-template-rows: minmax(min-content, max-content);
+        grid-template-areas: 
+        'grid-image grid-image grid-image grid-image'  
+        'grid-image grid-image grid-image grid-image' 
+        'line-one line-one line-one line-one'  
+        'line-two line-two line-three line-three' 
+        'pc-desk pc-desk pc-desk pc-desk'
+        'pc-a-btn pc-a-btn pc-a-btn pc-a-btn'
+        ;
+    }
+
+    .preview-description {
+        display: grid;
+        grid-area: pc-desk;
+    }
+
+    .article-btn {
+        display: none;
+    }
+
+    .pc-article-btn {
+        display: grid;
+        grid-area: pc-a-btn;  
+        margin: 0 auto;
+    }
+
+    .grid-line-two {
+        margin: auto 0px;
+    }
+
+    .article-preview-grid > img {
+        width: 100%;
+        height: 170px;
+        object-fit: cover;
+        object-position: top;
+        border-radius: 0;
     }
 }
 
