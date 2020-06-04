@@ -52,7 +52,12 @@ h4 {
     font-size: 1.8rem;
 }
 
-h1, h2, h3, h4, h5, h6 {
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
     line-height: 1.2;
     color: var(--dark-gray);
 }
@@ -65,6 +70,7 @@ p {
 a {
     font-size: 1rem;
 }
+
 
 /* MENU STYLING */
 
@@ -93,7 +99,8 @@ header {
     visibility: visible;
 }
 
-ul.menu-nav.show, a.menu-logo.show {
+ul.menu-nav.show,
+a.menu-logo.show {
     transform: translate3d(0, 0, 0);
 }
 
@@ -121,6 +128,7 @@ ul.menu-nav.show, a.menu-logo.show {
     margin-bottom: 5px;
     transition: all 0.5s ease-out;
 }
+
 
 /* Styling nav items individual */
 
@@ -156,6 +164,7 @@ ul.menu-nav.show, a.menu-logo.show {
     transition-delay: 0.4s;
 }
 
+
 /* CLOSING STATE BURGER*/
 
 .menu-btn.close {
@@ -173,6 +182,7 @@ ul.menu-nav.show, a.menu-logo.show {
 .menu-btn.close .btn-line:nth-child(3) {
     transform: rotate(-45deg) translate(5px, -7px);
 }
+
 
 /* Styling nav items together */
 
@@ -207,6 +217,7 @@ ul.menu-nav.show, a.menu-logo.show {
 .nav-item.show {
     transform: translate3d(0, 0, 0);
 }
+
 
 /* DROPDOWN */
 
@@ -243,7 +254,9 @@ ul.menu-nav.show, a.menu-logo.show {
     padding-left: 5%;
 }
 
+
 /* MENU STYLING END */
+
 
 /* HERO IMAGE */
 
@@ -268,7 +281,9 @@ ul.menu-nav.show, a.menu-logo.show {
     opacity: 0.7;
 }
 
+
 /* LANDING PAGE*/
+
 .hero-h1 {
     display: none;
 }
@@ -297,6 +312,7 @@ ul.menu-nav.show, a.menu-logo.show {
 .flex-normal>p {
     margin: auto 5px;
 }
+
 
 /* All grids */
 
@@ -341,6 +357,7 @@ ul.menu-nav.show, a.menu-logo.show {
     grid-template-areas: '. . c-h2 . .' '. a-l c-img a-r .' '. . c-text . .' '. . c-dots . .' '. . . . .';
 }
 
+
 /* All grids end */
 
 .sports-a {
@@ -371,10 +388,7 @@ ul.menu-nav.show, a.menu-logo.show {
     display: grid;
     grid-template-columns: 4fr 1fr 7fr;
     grid-template-rows: repeat(3, 1fr);
-    grid-template-areas: 
-    'grid-image . line-one' 
-    'grid-image . line-two' 
-    'grid-image . line-three';
+    grid-template-areas: 'grid-image . line-one' 'grid-image . line-two' 'grid-image . line-three';
 }
 
 .article-preview-grid>img {
@@ -407,6 +421,7 @@ ul.menu-nav.show, a.menu-logo.show {
     width: 39%;
     font-size: 1.2rem;
 }
+
 
 /* Orange border on headings */
 
@@ -451,10 +466,6 @@ ul.menu-nav.show, a.menu-logo.show {
     margin-top: 20%;
 }
 
-.preview-article {
-    
-}
-
 .past-article-main h1 {
     padding: 2%;
 }
@@ -488,6 +499,7 @@ ul.menu-nav.show, a.menu-logo.show {
     box-shadow: 0 7.1px 6.2px -15px rgba(0, 0, 0, 0.55), 0 20.8px 14px -15px rgba(0, 0, 0, 0.127), 0 20px 24px -15px rgba(0, 0, 0, 0.145);
 }
 
+
 /* .article-background:nth-child(1), .article-background:nth-child(2) {
     margin: 4%;
 }
@@ -500,6 +512,7 @@ ul.menu-nav.show, a.menu-logo.show {
     margin-top: 15%;
     margin-bottom: 5%;
 }
+
 
 /* STYLING FOR ALL BIG BUTTONS */
 
@@ -524,11 +537,13 @@ ul.menu-nav.show, a.menu-logo.show {
     color: var(--dark-gray);
 }
 
+
 /*GLOBAL MARGIN */
 
 .section-margin {
     margin-top: 20%;
 }
+
 
 /* TESTIMONIALS */
 
@@ -573,7 +588,7 @@ ul.menu-nav.show, a.menu-logo.show {
     margin-bottom: 5%;
 }
 
-.gallery-grid > .carousel-h2 {
+.gallery-grid>.carousel-h2 {
     text-align: left;
 }
 
@@ -588,7 +603,8 @@ ul.menu-nav.show, a.menu-logo.show {
     transition: background-color 0.6s ease;
 }
 
-.active, .dot:hover {
+.active,
+.dot:hover {
     background-color: var(--dark-gray);
 }
 
@@ -606,9 +622,11 @@ ul.menu-nav.show, a.menu-logo.show {
     margin: auto 0;
 }
 
+
 /* SPORTS PAGE */
 
-.sports-text, .membership-text {
+.sports-text,
+.membership-text {
     background-color: var(--white);
     width: 80%;
     height: 20%;
@@ -622,6 +640,7 @@ ul.menu-nav.show, a.menu-logo.show {
 .sports-main .explore-grid {
     margin-top: 8%;
 }
+
 
 /* UPCOMING EVENTS PAGE */
 
@@ -654,6 +673,7 @@ ul.menu-nav.show, a.menu-logo.show {
     color: var(--blue);
 }
 
+
 /* MEMBERS PAGE */
 
 .membership-main .explore-grid {
@@ -666,10 +686,9 @@ ul.menu-nav.show, a.menu-logo.show {
     grid-template-columns: 5% 1fr 5%;
     grid-template-rows: minmax(min-content, max-content);
     text-align: center;
-    grid-template-areas: '. events .'
-    '. community .'
-    '. tourists .';
+    grid-template-areas: '. events .' '. community .' '. tourists .';
 }
+
 .statistic-box {
     padding: 10% 0;
     width: 100%;
@@ -678,7 +697,8 @@ ul.menu-nav.show, a.menu-logo.show {
     margin: 2% 0;
 }
 
-.statistic-box h3, .statistic-box p {
+.statistic-box h3,
+.statistic-box p {
     color: var(--white);
 }
 
@@ -696,14 +716,15 @@ ul.menu-nav.show, a.menu-logo.show {
     grid-area: tourists;
     background-image: url(../images/box3_membership.jpg);
 }
+
 .membership-main .explore-grid {
-        grid-template-areas: '. . .' 'element-detail text .' '. m-button .' ;
+    grid-template-areas: '. . .' 'element-detail text .' '. m-button .';
 }
 
- .membership-btn {
+.membership-btn {
     grid-area: m-button;
     margin-top: 7%;
-} 
+}
 
 .membership-main .section-margin {
     margin-top: 10%;
@@ -717,9 +738,7 @@ ul.menu-nav.show, a.menu-logo.show {
     background-color: var(--orange);
     grid-template-columns: 5% 1fr 5%;
     grid-template-rows: minmax(min-content, max-content);
-    grid-template-areas: '. subscribe .'
-    '. form .'
-    '. m-btn .';
+    grid-template-areas: '. subscribe .' '. form .' '. m-btn .';
 }
 
 .article-grid {
@@ -729,12 +748,8 @@ ul.menu-nav.show, a.menu-logo.show {
     grid-template-columns: 5% 5% 1fr 5% 5%;
     grid-template-rows: minmax(min-content, max-content);
     text-align: left;
-    grid-template-areas: 
-    '. icon1 i-info . .'
-    '. . t-info . .'
-    ;
+    grid-template-areas: '. icon1 i-info . .' '. . t-info . .';
 }
-
 
 .icon1 {
     grid-area: icon1;
@@ -752,15 +767,21 @@ ul.menu-nav.show, a.menu-logo.show {
     grid-area: t-info;
 }
 
+.mobile-none {
+    display: none;
+}
+
+.pc-none {
+    display: grid;
+}
+
 .map-grid {
     position: relative;
     display: grid;
     grid-template-columns: 5% 1fr 5%;
     grid-template-rows: minmax(min-content, max-content);
     text-align: center;
-    grid-template-areas: 
-    '. map .'
-    '. media .';
+    grid-template-areas: '. map .' '. media .';
 }
 
 .gallery-grid {
@@ -769,16 +790,12 @@ ul.menu-nav.show, a.menu-logo.show {
     grid-template-columns: 5% 5% 5% 1fr 5% 5% 5%;
     grid-template-rows: minmax(min-content, max-content);
     text-align: unset;
-    grid-template-areas: 
-    '. . . g-h2 . . .'
-    '. a-l . g-img . a-r .'
-    '. . . media . . .';
+    grid-template-areas: '. . . g-h2 . . .' '. a-l . g-img . a-r .' '. . . media . . .';
 }
 
 .gallery-h2 {
     grid-area: g-h2;
 }
-
 
 .map-img {
     grid-area: map;
@@ -790,8 +807,8 @@ ul.menu-nav.show, a.menu-logo.show {
 .map-media {
     grid-area: media;
     margin-top: 5%;
-    justify-content: flex-start;  
-    color: var(--gray); 
+    justify-content: flex-start;
+    color: var(--gray);
 }
 
 .map-media i {
@@ -799,14 +816,14 @@ ul.menu-nav.show, a.menu-logo.show {
     color: var(--orange);
 }
 
-
 .subscribe {
-    grid-area: subscribe; 
+    grid-area: subscribe;
     padding: 5%;
 }
 
-.subscribe h3, .subscribe p {
-    color: var(--white); 
+.subscribe h3,
+.subscribe p {
+    color: var(--white);
 }
 
 .membership-form {
@@ -828,11 +845,13 @@ ul.menu-nav.show, a.menu-logo.show {
 }
 
 .membership-sub-grid form input::placeholder {
-    color:  var(--dark-gray);
+    color: var(--dark-gray);
 }
+
 .membership-sub-grid form input:focus::placeholder {
     opacity: 0;
 }
+
 .credit-cards {
     display: flex;
 }
@@ -861,9 +880,13 @@ ul.menu-nav.show, a.menu-logo.show {
 .benefits i {
     padding-right: 4%;
 }
-.subscribe h3, .subscribe form, .subscribe a {
+
+.subscribe h3,
+.subscribe form,
+.subscribe a {
     text-align: center;
 }
+
 
 /*Upcoming Article*/
 
@@ -878,6 +901,7 @@ ul.menu-nav.show, a.menu-logo.show {
     color: var(--gray);
 }
 
+
 /*PAST Event Article*/
 
 .past-event-images img {
@@ -891,11 +915,13 @@ ul.menu-nav.show, a.menu-logo.show {
     grid-area: g-img;
 }
 
+
 /**/
 
 .preview-description {
     display: none;
 }
+
 
 /* FOOTER MOBILE */
 
@@ -957,9 +983,11 @@ footer p {
     padding-top: 3%;
 }
 
+
 /* MEMBERSHIP+NEWSLETTER BOX */
 
-.membership-box, .newsletter-box {
+.membership-box,
+.newsletter-box {
     margin-top: 8%;
     background-image: url(../images/membership_box.jpg);
     background-repeat: no-repeat;
@@ -1002,7 +1030,8 @@ footer p {
     background-color: var(--blue);
 }
 
-input[type=text], select {
+input[type=text],
+select {
     width: 85%;
     padding: 6px 15px;
     margin: 18px 0;
@@ -1012,9 +1041,12 @@ input[type=text], select {
     box-sizing: border-box;
 }
 
+
 /* END OF FOOTER */
 
+
 /* QUERIES START */
+
 
 /*Tablet*/
 
@@ -1022,9 +1054,7 @@ input[type=text], select {
     html {
         font-size: 15px;
     }
-
     /*index page*/
-    
     video {
         height: 50vh;
         width: 100%;
@@ -1032,104 +1062,79 @@ input[type=text], select {
         -webkit-border-radius: 1px;
         object-fit: cover;
     }
-
-    .explore-grid, .event-grid, .sports-grid, .map-grid, .statistics-grid {
+    .explore-grid,
+    .event-grid,
+    .sports-grid,
+    .map-grid,
+    .statistics-grid {
         grid-template-columns: 10% 1fr 10%;
     }
-
-    .testimonial-grid, .article-grid {
+    .testimonial-grid,
+    .article-grid {
         grid-template-columns: 10% 5% 1fr 5% 10%;
     }
-
     .article-preview-grid {
-        grid-template-areas: 
-        'grid-image . line-one' 
-        'grid-image . description' 
-        'grid-image . description'  
-        'grid-image . line-two' 
-        'grid-image . line-three'
-        ;
-
-        
+        grid-template-areas: 'grid-image . line-one' 'grid-image . description' 'grid-image . description' 'grid-image . line-two' 'grid-image . line-three';
     }
-
     .article-background {
         width: 200px;
         height: 200px;
     }
-
     .index-main form input {
         margin-bottom: 5%;
     }
-    
     .all-btn {
         padding: 2% 5%;
     }
-
     .big-btn {
         padding: 2% 10%;
     }
-
     .fa-3x {
         font-size: 4rem;
     }
-
     .preview-description {
         display: grid;
         grid-area: description;
         line-height: 1.2;
         padding: 0 0 2% 0;
-        
     }
-
     .preview-description p {
         font-size: 1.2rem;
     }
-
     /*upcoming article*/
-
     .article-author {
         margin-top: 4%;
         z-index: 100;
     }
-
     .article-grid i {
         font-size: 1.8rem;
     }
-
     .article-grid {
         text-align: center;
     }
-
-    .article-icon-info p, .article-text-info p {
+    .article-icon-info p,
+    .article-text-info p {
         text-align: left;
     }
-
     /*past article*/
-
     .past-article-main .explore-grid {
         margin-top: 10%;
     }
-
-    .gallery-grid > .carousel-h2 {
+    .gallery-grid>.carousel-h2 {
         text-align: center;
     }
-
     .past-event-images img {
         height: 250px;
     }
-
     /*Membership*/
-    
     .membership-sub-grid {
         margin: 0 10%;
     }
-
     input[type="text"] {
         margin: 18px 0 36px 0;
     }
-    
 }
+
 
 /*PC*/
 
@@ -1223,48 +1228,127 @@ input[type=text], select {
     .nav-dropdown-item>.nav-dropdown-link:hover {
         color: var(--sand);
     }
-
     /*Index page*/
-
     .pc-landing-grid {
         position: relative;
         display: grid;
         grid-template-columns: 10% 35% 5% 50%;
         grid-template-rows: minmax(min-content, max-content);
-        grid-template-areas:
-        '. h-h1 . video'
-        '. quote . video'
-        '. pc-e-grid . video'
-        '. . . video'
-        ;
+        grid-template-areas: '. h-h1 . video' '. quote . video' '. pc-e-grid . video' '. . . video';
     }
-
     .pc-display-none {
         display: none;
     }
-
     .hero-h1 {
         margin: 50px auto 0 auto;
         grid-area: h-h1;
         display: grid;
     }
-
     .pc-explore-grid {
         grid-area: pc-e-grid;
     }
-
     .hero-image {
         grid-area: video;
         margin: 50px auto 0 auto;
     }
-
     .quote {
         grid-area: quote;
         display: grid;
     }
+    /* Membership page */
+    header {
+        position: relative;
+    }
+    .membership-body .hero-image {
+        margin: 0;
+    }
+    .membership-main .hero {
+        margin-top: 0;
+    }
+    .menu {
+        position: absolute;
+    }
+    .menu .nav-link {
+        font-size: 2rem;
+    }
+    .nav-dropdown-link {
+        font-size: 2rem;
+    }
+    .hero {
+        height: 50vh;
+    }
+    .sports-text,
+    .membership-text {
+        padding: 1.5% 0;
+        margin-top: -4%;
+    }
+    .membership-main .explore-grid {
+        margin-top: 2%;
+        grid-template-columns: 10% 7fr 4fr 10%;
+    }
+    .membership-main .explore-grid {
+        grid-template-areas: '. . . .' 'element-detail text subscribe .' '. m-button subscribe .';
+    }
+    .membership-body .all-btn {
+        padding: 2% 10%;
+        width: 33%;
+    }
+    .membership-btn {
+        margin: 5% 0 0 0;
+        font-size: 1.4rem;
+    }
+    .membership-body .article-text>p {
+        margin-top: 1.5%;
+    }
+    .membership-body .article-text {
+        width: 75%;
+    }
+    .statistics-grid {
+        grid-template-columns: 10% 1fr 1% 1fr 1% 1fr 10%;
+        grid-template-areas: '. events . community . tourists .';
+    }
+    .membership-main .section-margin {
+        margin-top: 3%;
+    }
+    .membership-main .statistic-box {
+        padding: 15% 0;
+    }
+    .membership-sub-grid {
+        margin: 0 20%;
+        padding: 2% 5%;
+    }
+    .mobile-none {
+        display: grid;
+    }
+    .pc-none {
+        display: none;
+    }
+    .subscribe p,
+    .subscribe h3 {
+        color: var(--black);
+    }
+    .subscribe {
+        padding: 7%;
+        border: 3px solid var(--blue);
+        justify-content: center;
+        width: 60%;
+        margin: 0 auto;
+    }
+    .membership-sub-grid {
+        grid-template-areas: '. membertitle .' '. form .' '. m-btn .';
+    }
+    .member-title {
+        grid-area: membertitle;
+        text-align: center;
+    }
+    .membership-form {
+        padding: 2% 20%;
+    }
 }
 
+
 /* VIDEO */
+
 video {
     width: 100%;
 }
