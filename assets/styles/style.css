@@ -1260,6 +1260,15 @@ select {
     .nav-dropdown-item>.nav-dropdown-link:hover {
         color: var(--sand);
     }
+    /* All btn changes */
+    .all-btn {
+        width: 20%;
+        padding: 1% 4%;
+        margin: 0 auto;
+    }
+    .big-btn {
+        padding: 2% 11%;
+    }
     /*LANDING PAGE*/
     .pc-landing-grid {
         position: relative;
