@@ -38,6 +38,7 @@ html {
 
 h1 {
     font-size: 3rem;
+    text-transform: uppercase;
 }
 
 h2 {
@@ -52,12 +53,7 @@ h4 {
     font-size: 1.8rem;
 }
 
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
+h1, h2, h3, h4, h5, h6 {
     line-height: 1.2;
     color: var(--dark-gray);
 }
@@ -70,7 +66,6 @@ p {
 a {
     font-size: 1rem;
 }
-
 
 /* MENU STYLING */
 
@@ -99,8 +94,7 @@ header {
     visibility: visible;
 }
 
-ul.menu-nav.show,
-a.menu-logo.show {
+ul.menu-nav.show, a.menu-logo.show {
     transform: translate3d(0, 0, 0);
 }
 
@@ -128,7 +122,6 @@ a.menu-logo.show {
     margin-bottom: 5px;
     transition: all 0.5s ease-out;
 }
-
 
 /* Styling nav items individual */
 
@@ -164,7 +157,6 @@ a.menu-logo.show {
     transition-delay: 0.4s;
 }
 
-
 /* CLOSING STATE BURGER*/
 
 .menu-btn.close {
@@ -182,7 +174,6 @@ a.menu-logo.show {
 .menu-btn.close .btn-line:nth-child(3) {
     transform: rotate(-45deg) translate(5px, -7px);
 }
-
 
 /* Styling nav items together */
 
@@ -217,7 +208,6 @@ a.menu-logo.show {
 .nav-item.show {
     transform: translate3d(0, 0, 0);
 }
-
 
 /* DROPDOWN */
 
@@ -254,9 +244,7 @@ a.menu-logo.show {
     padding-left: 5%;
 }
 
-
 /* MENU STYLING END */
-
 
 /* HERO IMAGE */
 
@@ -281,11 +269,14 @@ a.menu-logo.show {
     opacity: 0.7;
 }
 
-
 /* LANDING PAGE*/
 
 .hero-h1 {
     display: none;
+}
+
+.hero-h1 h1 {
+    text-transform: none;
 }
 
 .quote {
@@ -317,13 +308,11 @@ a.menu-logo.show {
     display: none;
 }
 
-
 /* VIDEO */
 
 video {
     width: 100%;
 }
-
 
 /* All grids */
 
@@ -367,7 +356,6 @@ video {
     grid-template-rows: minmax(min-content, max-content);
     grid-template-areas: '. . c-h2 . .' '. a-l c-img a-r .' '. . c-text . .' '. . c-dots . .' '. . . . .';
 }
-
 
 /* All grids end */
 
@@ -432,7 +420,6 @@ video {
     width: 39%;
     font-size: 1.2rem;
 }
-
 
 /* Orange border on headings */
 
@@ -510,7 +497,6 @@ video {
     box-shadow: 0 7.1px 6.2px -15px rgba(0, 0, 0, 0.55), 0 20.8px 14px -15px rgba(0, 0, 0, 0.127), 0 20px 24px -15px rgba(0, 0, 0, 0.145);
 }
 
-
 /* .article-background:nth-child(1), .article-background:nth-child(2) {
     margin: 4%;
 }
@@ -523,7 +509,6 @@ video {
     margin-top: 15%;
     margin-bottom: 5%;
 }
-
 
 /* STYLING FOR ALL BIG BUTTONS */
 
@@ -548,13 +533,11 @@ video {
     color: var(--dark-gray);
 }
 
-
 /*GLOBAL MARGIN */
 
 .section-margin {
     margin-top: 20%;
 }
-
 
 /* TESTIMONIALS */
 
@@ -614,8 +597,7 @@ video {
     transition: background-color 0.6s ease;
 }
 
-.active,
-.dot:hover {
+.active, .dot:hover {
     background-color: var(--dark-gray);
 }
 
@@ -633,11 +615,9 @@ video {
     margin: auto 0;
 }
 
-
 /* SPORTS PAGE */
 
-.sports-text,
-.membership-text {
+.sports-text, .membership-text {
     background-color: var(--white);
     width: 80%;
     height: 20%;
@@ -651,7 +631,6 @@ video {
 .sports-main .explore-grid {
     margin-top: 8%;
 }
-
 
 /* UPCOMING EVENTS PAGE */
 
@@ -684,7 +663,6 @@ video {
     color: var(--blue);
 }
 
-
 /* MEMBERS PAGE */
 
 .membership-main .explore-grid {
@@ -708,8 +686,7 @@ video {
     margin: 2% 0;
 }
 
-.statistic-box h3,
-.statistic-box p {
+.statistic-box h3, .statistic-box p {
     color: var(--white);
 }
 
@@ -750,6 +727,10 @@ video {
     grid-template-columns: 5% 1fr 5%;
     grid-template-rows: minmax(min-content, max-content);
     grid-template-areas: '. subscribe .' '. form .' '. m-btn .';
+}
+
+.membership-sub-grid h3 {
+    color: var(--white);
 }
 
 .article-grid {
@@ -832,8 +813,7 @@ video {
     padding: 5%;
 }
 
-.subscribe h3,
-.subscribe p {
+.subscribe h3, .subscribe p {
     color: var(--white);
 }
 
@@ -892,12 +872,9 @@ video {
     padding-right: 4%;
 }
 
-.subscribe h3,
-.subscribe form,
-.subscribe a {
+.subscribe h3, .subscribe form, .subscribe a {
     text-align: center;
 }
-
 
 /*Upcoming Article*/
 
@@ -912,17 +889,13 @@ video {
     color: var(--gray);
 }
 
-.article-icon-info .grid-i1,
-.article-icon-info .grid-i2,
-.article-icon-info .grid-i3,
-.article-icon-info .grid-i4 {
+.article-icon-info .grid-i1, .article-icon-info .grid-i2, .article-icon-info .grid-i3, .article-icon-info .grid-i4 {
     display: none;
 }
 
 .events-btn-pc {
     display: none;
 }
-
 
 /*PAST Event Article*/
 
@@ -937,13 +910,11 @@ video {
     grid-area: g-img;
 }
 
-
 /**/
 
 .preview-description {
     display: none;
 }
-
 
 /* FOOTER MOBILE */
 
@@ -1005,11 +976,9 @@ footer p {
     padding-top: 3%;
 }
 
-
 /* MEMBERSHIP+NEWSLETTER BOX */
 
-.membership-box,
-.newsletter-box {
+.membership-box, .newsletter-box {
     margin-top: 8%;
     background-image: url(../images/membership_box.jpg);
     background-repeat: no-repeat;
@@ -1052,8 +1021,7 @@ footer p {
     background-color: var(--blue);
 }
 
-input[type=text],
-select {
+input[type=text], select {
     width: 85%;
     padding: 6px 15px;
     margin: 18px 0;
@@ -1063,12 +1031,9 @@ select {
     box-sizing: border-box;
 }
 
-
 /* END OF FOOTER */
 
-
 /* QUERIES START */
-
 
 /*Tablet*/
 
@@ -1084,15 +1049,10 @@ select {
         -webkit-border-radius: 1px;
         object-fit: cover;
     }
-    .explore-grid,
-    .event-grid,
-    .sports-grid,
-    .map-grid,
-    .statistics-grid {
+    .explore-grid, .event-grid, .sports-grid, .map-grid, .statistics-grid {
         grid-template-columns: 10% 1fr 10%;
     }
-    .testimonial-grid,
-    .article-grid {
+    .testimonial-grid, .article-grid {
         grid-template-columns: 10% 5% 1fr 5% 10%;
     }
     .article-preview-grid {
@@ -1134,8 +1094,7 @@ select {
     .article-grid {
         text-align: center;
     }
-    .article-icon-info p,
-    .article-text-info p {
+    .article-icon-info p, .article-text-info p {
         text-align: left;
     }
     /*past article*/
@@ -1156,17 +1115,13 @@ select {
         margin: 18px 0 36px 0;
     }
     /*Upcoming article*/
-    .grid-i1,
-    .grid-i2,
-    .grid-i3,
-    .grid-i4 {
+    .grid-i1, .grid-i2, .grid-i3, .grid-i4 {
         display: none;
     }
     .events-btn-pc {
         display: none;
     }
 }
-
 
 /*PC*/
 
@@ -1267,15 +1222,14 @@ select {
         margin: 0 auto;
     }
     .big-btn {
-        padding: 2% 11%;
+        padding: 1% 7%;
     }
     /*LANDING PAGE*/
     .pc-landing-grid {
         position: relative;
         display: grid;
-        grid-template-columns: 5% 40% 5% 50%;
+        grid-template-columns: 10% 35% 5% 50%;
         grid-template-rows: 5% 2fr 1fr 2fr 1fr;
-        /* height: 90vh; */
         grid-template-areas: '. . . video' '. h-h1 . video' '. quote . video' '. pc-e-grid . video' '. go . video';
     }
     .explore-grid {
@@ -1328,18 +1282,16 @@ select {
         align-items: flex-end;
         flex-direction: row;
     }
-    .go a,
-    .go a>i {
+    .go a, .go a>i {
         color: var(--blue);
         font-size: 2rem;
         cursor: pointer;
         text-decoration: none;
     }
     /*Upcoming Article*/
-    .event-grid {
-        grid-template-columns: 5% 1fr 5%;
+    .event-grid, .sports-grid {
+        grid-template-columns: 15% 1fr 15%;
     }
-
     .article-grid {
         width: 70%;
         margin: 0 auto;
@@ -1390,10 +1342,7 @@ select {
         grid-area: g-i4;
         margin-top: 3%;
     }
-    .article-icon-info .grid-i1,
-    .article-icon-info .grid-i2,
-    .article-icon-info .grid-i3,
-    .article-icon-info .grid-i4 {
+    .article-icon-info .grid-i1, .article-icon-info .grid-i2, .article-icon-info .grid-i3, .article-icon-info .grid-i4 {
         display: grid;
     }
     .article-text-info {
@@ -1438,21 +1387,13 @@ select {
     .article-preview-grid {
         margin-bottom: 0%;
         padding-bottom: 0%;
-        margin-left: 2%;
         margin-right: 2%;
         border-bottom: none;
         background-color: #FCFCFC;
         display: grid;
         grid-template-columns: 25% 25% 25% 25%;
         grid-template-rows: minmax(min-content, max-content);
-        grid-template-areas: 
-        'grid-image grid-image grid-image grid-image' 
-        'grid-image grid-image grid-image grid-image' 
-        'line-one line-one line-one line-one' 
-        'line-two line-two line-two line-two' 
-        'line-three line-three line-three line-three'
-        'pc-desk pc-desk pc-desk pc-desk' 
-        'pc-a-btn pc-a-btn pc-a-btn pc-a-btn';
+        grid-template-areas: 'grid-image grid-image grid-image grid-image' 'grid-image grid-image grid-image grid-image' 'line-one line-one line-one line-one' 'line-two line-two line-two line-two' 'line-three line-three line-three line-three' 'pc-desk pc-desk pc-desk pc-desk' 'pc-a-btn pc-a-btn pc-a-btn pc-a-btn';
     }
     .preview-description {
         display: grid;
@@ -1472,10 +1413,27 @@ select {
     }
     .article-preview-grid>img {
         width: 100%;
-        height: 12vw;
+        height: 10vw;
         object-fit: cover;
         object-position: top;
         border-radius: 25px;
+    }
+    .article-preview-grid p {
+        line-height: 1.3;
+    }
+    /* Message box */
+    .message-box {
+        padding: 4%;
+    }
+    .message-box p {
+        margin: 0 auto 2% auto;
+        font-size: 2rem;
+    }
+    .message-box a {
+        font-size: 1.4rem;
+    }
+    input[type=text], select {
+        width: 50%;
     }
     /* Membership page */
     header {
@@ -1504,14 +1462,13 @@ select {
     .membership-body .hero {
         object-position: 0% 20%;
     }
-    .sports-text,
-    .membership-text {
+    .sports-text, .membership-text {
         padding: 1.5% 0;
         margin-top: -4%;
     }
     .membership-main .explore-grid {
         margin-top: 2%;
-        grid-template-columns: 10% 7fr 4fr 10%;
+        grid-template-columns: 15% 7fr 4fr 15%;
     }
     .membership-main .explore-grid {
         grid-template-areas: '. . . .' 'element-detail text subscribe .' '. m-button subscribe .';
@@ -1550,15 +1507,14 @@ select {
     .pc-none {
         display: none;
     }
-    .subscribe p,
-    .subscribe h3 {
+    .subscribe p, .subscribe h3 {
         color: var(--black);
     }
     .subscribe {
         padding: 7%;
         border: 3px solid var(--blue);
         justify-content: center;
-        width: 60%;
+        width: 100%;
         margin: 0 auto;
     }
     .membership-sub-grid {
@@ -1571,75 +1527,59 @@ select {
     .membership-form {
         padding: 2% 20%;
     }
-
     /*SPORTS page*/
     .sports-main .explore-grid {
         grid-template-columns: 20% 1fr 20%;
     }
-
     .sports-main .sports-grid {
         grid-template-columns: 20% 1fr 20%;
     }
-
     .sports-grid .all-btn {
         justify-self: end;
         margin: 0;
     }
-
     .sports-main .explore-grid .article-text p {
         width: 60%;
     }
-
     .article-background {
-        width: 200px;
-        height: 160px;
+        width: 145px;
+        height: 140px;
     }
-
     /*PC Corrections*/
     .section-margin {
         margin-top: 10%;
     }
-
     video {
         border-radius: 1px;
         -webkit-border-radius: 1px;
         object-fit: cover;
     }
-
     .testimonial-grid-pc {
         position: relative;
         color: var(--dark-gray);
         margin-top: 5%;
         display: grid;
-        grid-template-columns: 5% 1fr 1fr 1fr 5%;
+        grid-template-columns: 10% 1fr 1fr 1fr 10%;
         grid-template-rows: minmax(min-content, max-content);
-        grid-template-areas: 
-        '. . t-t-pc . .'
-        '. t-1 t-2 t-3 .'
-        ;
+        grid-template-areas: '. . t-t-pc . .' '. t-1 t-2 t-3 .';
     }
-
     .title-testimonial-pc {
         grid-area: t-t-pc;
     }
-
     .testimonial-pc-1 img, .testimonial-pc-2 img, .testimonial-pc-3 img {
         width: 65%;
         border-radius: 50%;
         margin-bottom: 8%;
     }
-
     .testimonial-pc-1, .testimonial-pc-2, .testimonial-pc-3 {
         padding: 5%;
     }
-
     .testimonial-pc-1 p, .testimonial-pc-2 p, .testimonial-pc-3 p {
         background-color: var(--blue);
         color: var(--white);
         height: 100px;
         padding: 2%;
     }
-
     .testimonial-pc-1 {
         grid-area: t-1;
     }
@@ -1649,23 +1589,18 @@ select {
     .testimonial-pc-3 {
         grid-area: t-3;
     }
-
     .grid-line-two p, .grid-line-three p {
         font-size: 1.2rem;
     }
-
     .grid-line-two i, .grid-line-three i {
         font-size: 1.4em;
     }
-
     .grid-line-one {
         margin-top: 3%;
     }
-
     .grid-line-one, .grid-line-three {
         margin-bottom: 5%;
     }
 }
-
 
 /*Upcoming Article*/
