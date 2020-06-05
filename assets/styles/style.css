@@ -6,8 +6,9 @@
 }
 
 .text-primary {
-    /* font-family: 'Montserrat', sans-serif; */
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 600;
+    /* font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif; */
 }
 
 .text-secondary {
@@ -15,8 +16,10 @@
 }
 
 .text_special {
-    font-family: 'Josefin Sans', sans-serif;
+    font-family: 'Montserrat', sans-serif;
 }
+
+
 
  :root {
     --black: #000000;
@@ -336,6 +339,7 @@ a.menu-logo.show {
 
 video {
     width: 100%;
+    height: 92vh;
 }
 
 
@@ -1130,6 +1134,8 @@ select {
     .index-main form input {
         margin-bottom: 5%;
     }
+   
+
     .all-btn {
         padding: 2% 5%;
     }
@@ -1208,6 +1214,7 @@ select {
     .menu-btn {
         display: none;
     }
+
     .menu {
         flex-direction: row;
         background: none;
@@ -1286,7 +1293,7 @@ select {
     }
     /* All btn changes */
     .all-btn {
-        width: 20%;
+        width: 22%;
         padding: 1% 4%;
         margin: 0 auto;
     }
@@ -1410,12 +1417,59 @@ select {
     .go a>i {
         color: var(--blue);
         font-size: 2rem;
+        margin-bottom: 5%;
         cursor: pointer;
         text-decoration: none;
     }
     .pc-landing-grid .go a i {
         margin-left: 10px;
     }
+
+    .icon-size {
+        font-size: 3.0rem;
+    }
+
+      /* FOOTER PC */
+
+      .footer-grid ul li {
+        list-style: none;
+        margin: 0% 7%;
+        font-size: 1.4rem;
+    }
+    .footer-grid ul{
+        list-style: none; 
+        display: flex;
+        flex-direction: row;
+        margin: 2% auto;
+        justify-content: center;
+
+       }
+
+       footer span {
+           color: var(--orange);
+           font-weight: 900;
+       }
+
+       footer {
+        grid-template-areas: "logonav" "navitems" "name""icons""info";
+       }
+
+       .navitems {
+           grid-area: navitems;
+       }
+
+       .icons {
+           width: 20%;
+       }
+
+       .logonav {
+           grid-area: logonav;
+           height: 80px;
+           width: 80px;
+           margin: 0 auto;
+       }
+
+    
     /*Upcoming Article*/
     .event-grid,
     .sports-grid {
@@ -1730,6 +1784,10 @@ select {
     .membership-form {
         padding: 2% 20%;
     }
+    .counter {
+        font-size: 3rem;
+    }
+
     /*SPORTS page*/
     .sports-main .explore-grid {
         grid-template-columns: 15% 1fr 15%;
@@ -1981,4 +2039,7 @@ select {
     .past-event-images img {
         height: 300px;
     }
+
+
+  
 }
