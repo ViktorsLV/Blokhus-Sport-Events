@@ -12,8 +12,8 @@ const pastCatID = 3; //ID from wp for the past-event category
 let ArticleList;
 
 function renderArticle(){
-        let hrefLink = window.location.href.split("/")[8];
-        let postID = hrefLink.split("?")[1];
+        /* let hrefLink = window.location.href.split("/")[7]; */
+        let postID = window.location.href.split("?")[1];
         let postID2 = Number(postID);
 
     ArticleList.forEach(Article => {
