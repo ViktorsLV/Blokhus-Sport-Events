@@ -1725,6 +1725,10 @@ select {
     .membership-form {
         padding: 2% 20%;
     }
+    .counter {
+        font-size: 3rem;
+    }
+
     /*SPORTS page*/
     .sports-main .explore-grid {
         grid-template-columns: 15% 1fr 15%;
