@@ -1334,6 +1334,11 @@ select {
     .event-grid a:hover span {
         padding-right: 25px;
     }
+
+    .article-preview-grid.mobile-none {
+        display: grid;
+    }
+
     a.grid-line-one:hover {
         background-color: var(--white);
     }
@@ -1747,6 +1752,8 @@ select {
     }
     .article-btn {
         padding: 2% 2%;
+        min-height: 30px;
+        max-height: 30px;
     }
     /* SPORTS BOX HOVER EFFECT */
     .sports a:hover {
