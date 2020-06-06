@@ -9,20 +9,21 @@
 // var numberOfPages = 1;   // calculates the total number of pages
 
 
-// // /*TEST list of objects*/
+// /*TEST list of objects*/
 
-// // function makeList() {
-// //     for (x = 0; x < list.length; x++)
-// //         list.push(list[x]);
-// // }
+// function makeList() {
+//     /* for (x = 0; x < list.length; x++)
+//         list.push(list[x]); */
+        
+// }
 
-// // /*executes test list on load of page */
-// // function load() {
-// //     makeList();
-// //     numberOfPages = getNumberOfPages();
-// // }
+// /*executes test list on load of page */
+// function load() {
+//     makeList();
+//     numberOfPages = getNumberOfPages();
+// }
     
-// // window.addEventListener('load', load);
+// window.addEventListener('load', load);
 
 // /*Calculates the number of total pages */
 // function getNumberOfPages() {
@@ -84,11 +85,9 @@
 
 
 
-//https://www.thatsoftwaredude.com/content/9101/custom-javascript-pagination-of-objects  ----- OMG OMG OMG
+// //https://www.thatsoftwaredude.com/content/9101/custom-javascript-pagination-of-objects  ----- OMG OMG OMG
 
-//https://www.thatsoftwaredude.com/content/6125/how-to-paginate-through-a-collection-in-javascript --- slightly less omg
-
-
+// //https://www.thatsoftwaredude.com/content/6125/how-to-paginate-through-a-collection-in-javascript --- slightly less omg
 
 
 
@@ -110,64 +109,66 @@
 
 
 
-/* let eventIndex = 1;
-let displayed;
-let counter = 0;
-let startIndex = 0;
-let increment = 5;
-let currentIndex = 0;
-let number;
-let articles = document.getElementsByClassName("preview-article");
-showEvents(eventIndex);
 
-function plusEvents(){
-    showEvents(eventIndex += counter);
-}
 
-function minusEvents(){
-    if (counter <= 5) {
-        counter = 0;
-    } else {
-        for (number = (counter-counter); number < (counter-5); number++) {
-            articles[number].style.display = "none";
-        }
-        counter -=5;
-    }
+// /* let eventIndex = 1;
+// let displayed;
+// let counter = 0;
+// let startIndex = 0;
+// let increment = 5;
+// let currentIndex = 0;
+// let number;
+// let articles = document.getElementsByClassName("preview-article");
+// showEvents(eventIndex);
+
+// function plusEvents(){
+//     showEvents(eventIndex += counter);
+// }
+
+// function minusEvents(){
+//     if (counter <= 5) {
+//         counter = 0;
+//     } else {
+//         for (number = (counter-counter); number < (counter-5); number++) {
+//             articles[number].style.display = "none";
+//         }
+//         counter -=5;
+//     }
     
-}
-//1 2 3 4 5 6 7
-function showEvents2(startIndex){
-    //
-    for (startIndex; startIndex < increment; startIndex++) {
+// }
+// //1 2 3 4 5 6 7
+// function showEvents2(startIndex){
+//     //
+//     for (startIndex; startIndex < increment; startIndex++) {
         
-        articles[startIndex].style.display = "grid";
+//         articles[startIndex].style.display = "grid";
         
-    }
-    startIndex;
-}
+//     }
+//     startIndex;
+// }
 
-function showEvents(amount){
+// function showEvents(amount){
     
-    if (amount > articles.length) {
-        eventIndex = 1;
-    }
-    if (amount < 1) {
-        eventIndex = articles.length;
-    }
+//     if (amount > articles.length) {
+//         eventIndex = 1;
+//     }
+//     if (amount < 1) {
+//         eventIndex = articles.length;
+//     }
     
-    for (number = counter; number < articles.length; number++) {
-        articles[number].style.display = "none";
-    }
-    counter +=5;
-    if (counter > articles.length) {
-        counter = articles.length;
-    } 
-    for (displayed = 0; displayed < counter; displayed++) {
-        articles[displayed].style.display = "grid";
-    }
+//     for (number = counter; number < articles.length; number++) {
+//         articles[number].style.display = "none";
+//     }
+//     counter +=5;
+//     if (counter > articles.length) {
+//         counter = articles.length;
+//     } 
+//     for (displayed = 0; displayed < counter; displayed++) {
+//         articles[displayed].style.display = "grid";
+//     }
 
     
-    /* for (hidden = (counter-5); hidden < counter; hidden++) {
-        articles[hidden].style.display = "none";
-    } 
-} */
+//     /* for (hidden = (counter-5); hidden < counter; hidden++) {
+//         articles[hidden].style.display = "none";
+//     } 
+// } */
