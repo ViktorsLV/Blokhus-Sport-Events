@@ -8,6 +8,9 @@
     <link rel="stylesheet" href="assets/styles/style.css">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.13.0/css/all.css" integrity="sha384-Bfad6CLCknfcloXFOyFnlgtENryhrpZCe29RTifKEixXQZ38WheV+i/6YWSzkz3V" crossorigin="anonymous">
     <script src="assets/scripts/main.js" defer></script>
+    <script src="assets/scripts/fetchArticles.js" defer></script>
+    <script src="assets/scripts/fetchPastArticles.js" defer></script>
+    <script src="assets/scripts/renderPastPreviewArticle.js" defer></script>
     <script src="assets/scripts/sliderEvent.js" defer></script>
     <link rel="shortcut icon" href="assets/images/logo.png" type="image/x-icon">
     <title>Past Event | Blokhus Sport & Events</title>
@@ -48,8 +51,9 @@
     </header>
 
     <main class="past-article-main">
-        <!-- HERO
+         
         <section id="past-article-js">
+            <!--
             <section class="hero-image">
                 <img class="hero" src="assets/images/hero_mobile.jpg" alt="Blokhus Sport and Events">
                 <h1 class="sports-text text-primary">Blokhus Outdoor Sport Event</h1>
@@ -72,32 +76,36 @@
             </section>
     
             
-            <section class="gallery-grid section-margin">
-                <div class="element-detail3 mobile-none"></div>
-                <h2 class="carousel-h2 text-primary gallery-h2"><span class="underlined-span">Gallery</span></h2>
-                <i class="fas fa-chevron-left fa-3x arrow-left" onclick="plusDivs(-1)"></i>
-                <div class="carousel-img past-event-images">
-                    <img class="mySlidesEvent" src="assets/images/article.jpg" alt="">
-                    <img class="mySlidesEvent" src="assets/images/box3_membership.jpg" alt="">
-                    <img class="mySlidesEvent" src="assets/images/article.jpg" alt="">
-                </div>
-                <i class="fas fa-chevron-right fa-3x arrow-right" onclick="plusDivs(1)"></i>
-                <div class="flex-normal map-media text-secondary">
-                    <p>Share this event:</p>
-                    <i class="fab fa-facebook fa-2x"></i>
-                    <i class="fab fa-facebook-messenger fa-2x"></i>
-                    <i class="fab fa-instagram fa-2x"></i>
-                </div>
-            </section> -->
+             -->
+            
         </section>
+
+        <section class="gallery-grid section-margin">
+            <div class="element-detail3 mobile-none"></div>
+            <h2 class="carousel-h2 text-primary gallery-h2"><span class="underlined-span">Gallery</span></h2>
+            <i class="fas fa-chevron-left fa-3x arrow-left" onclick="plusDivs(-1)"></i>
+            <div class="carousel-img past-event-images">
+                <img id="image1" class="mySlidesEvent" src="assets/images/article.jpg" alt="">
+                <img id="image2" class="mySlidesEvent" src="assets/images/box3_membership.jpg" alt="">
+                <img id="image3" class="mySlidesEvent" src="assets/images/article.jpg" alt="">
+            </div>
+            <i class="fas fa-chevron-right fa-3x arrow-right" onclick="plusDivs(1)"></i>
+            <div class="flex-normal map-media text-secondary">
+                <p>Share this event:</p>
+                <i class="fab fa-facebook fa-2x"></i>
+                <i class="fab fa-facebook-messenger fa-2x"></i>
+                <i class="fab fa-instagram fa-2x"></i>
+            </div>
+        </section>
+        
         
 
         <!-- EVENT ARTICLES -->
         <section class="event-grid section-margin" id="event-grid">
             <div class="element-detail2"></div>
-            <h2 class="text-primary article-h2">Upcoming Events</h2>
-            <section class="flex event-box">
-                <article class="article-preview-grid">
+            <h2 class="text-primary article-h2">Past Events</h2>
+            <section class="flex event-box" id="past-event-grid">
+                <!-- <article class="article-preview-grid">
                     <img class="grid-image" src="assets/images/article.jpg" alt="article image">
                     <a class="grid-line-one " href="">
                         <h3 class="text-primary">Swim season opener</h3>
@@ -190,8 +198,9 @@
                     <a class="article-btn fifty50 text-secondary pc-article-btn" href="upcoming-article.html mobile-none"><span>Read&nbsp;more</span></a>
                 </article>
                 <a class="all-btn text-secondary events-btn" href="upcoming-events.html">See all events</a>
+                -->
             </section>
-            <a class="all-btn text-secondary events-btn mobile-none desktop-all-btn" href="upcoming-events.html"><span>See all events</span></a>
+            <a class="all-btn text-secondary events-btn mobile-none desktop-all-btn" href="upcoming-events.html"><span>See all events</span></a> 
         </section>
 
         <!-- NEWSLETTER SUBSCRIPTION -->

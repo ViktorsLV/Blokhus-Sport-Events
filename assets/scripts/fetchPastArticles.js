@@ -43,25 +43,7 @@ function renderPastArticle(){
                     <p class="text-secondary">${Article.acf.past_description_two}</p>
                 </article>
             </section>
-    
-            <!-- Gallery -->
-            <section class="gallery-grid section-margin">
-                <div class="element-detail3 mobile-none"></div>
-                <h2 class="carousel-h2 text-primary gallery-h2"><span class="underlined-span">Gallery</span></h2>
-                <i class="fas fa-chevron-left fa-3x arrow-left" onclick="plusDivs(-1)"></i>
-                <div class="carousel-img past-event-images">
-                    <img class="mySlidesEvent" src="${Article.acf.gallery_images.sizes.large}" alt="">
-                    <img class="mySlidesEvent" src="assets/images/box3_membership.jpg" alt="">
-                    <img class="mySlidesEvent" src="assets/images/article.jpg" alt="">
-                </div>
-                <i class="fas fa-chevron-right fa-3x arrow-right" onclick="plusDivs(1)"></i>
-                <div class="flex-normal map-media text-secondary">
-                    <p>Share this event:</p>
-                    <i class="fab fa-facebook fa-2x"></i>
-                    <i class="fab fa-facebook-messenger fa-2x"></i>
-                    <i class="fab fa-instagram fa-2x"></i>
-                </div>
-            </section>`;
+            `;
         }
         
     });

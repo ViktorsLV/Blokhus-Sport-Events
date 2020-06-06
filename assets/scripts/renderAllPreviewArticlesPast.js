@@ -3,7 +3,7 @@ let pastPreviewList;
 
 function renderPastPreviewArticle(){
     
-    pastPreviewList.slice(0,3).forEach(Preview => {
+    pastPreviewList.forEach(Preview => {
         Preview = findPreviewByIDPast(Preview.id);
         pastPreviewSection.innerHTML += 
         `
@@ -31,36 +31,7 @@ function renderPastPreviewArticle(){
             <a class="article-btn fifty50 text-secondary pc-article-btn mobile-none" href="past-article.html?${Preview.id}"><span>Read&nbsp;more</span></a>
         </article>
     `;
-    }),
-
-    pastPreviewList.slice(3,4).forEach(Preview => {
-        Preview = findPreviewByIDPast(Preview.id);
-        pastPreviewSection.innerHTML += 
-        `
-        <article class="article-preview-grid mobile-none">
-            <img class="grid-image" src="${Preview.acf.past_hero_image}" alt="article image">
-            <a class="grid-line-one " href="">
-                <h3 class="text-primary">${Preview.acf.past_title}</h3>
-            </a>
-            <div class="grid-line-two">
-                <div class="flex-normal">
-                    <p class="text-secondary">${Preview.acf.author}</p>
-                </div>
-            </div>
-            <div class="grid-line-three">
-                <div class="flex-normal fifty50">
-                    <i class="fas fa-calendar-alt fa-2x"></i>
-                    <p class="text-secondary">${Preview.acf.posted_on}</p>
-                </div>
-                <a class="article-btn fifty50 text-secondary" href="past-article.html?${Preview.id}">Read&nbsp;more</a>
-            </div>
-            <div class="preview-description">
-                <p class="text-secondary">${Preview.acf.past_description_one.slice(0, 100) + '...'}</p>
-            </div>
-            <a class="article-btn fifty50 text-secondary pc-article-btn mobile-none" href="past-article.html?${Preview.id}"><span>Read&nbsp;more</span></a>
-        </article>
-    `;
-    });
+    })
 };
 
 function seeAllBtnRenderPast(){
@@ -81,7 +52,7 @@ function getPreviewFromWPPast() {
             try {
                 pastPreviewList = JSON.parse(this.responseText);
                 renderPastPreviewArticle();
-                seeAllBtnRenderPast();
+                
                 
             } catch (error) {
                 errorMessage(`Error parsing JSON: ${error}`);
