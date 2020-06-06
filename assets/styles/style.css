@@ -335,12 +335,12 @@ a.menu-logo.show {
 }
 
 
-/* VIDEO */
+/* VIDEO  for mobile + tablet responsive */
 
 video {
-    width: 100%;
-    height: 92vh;
-}
+    width: 100% ;
+    height: auto;
+  }
 
 
 /* All grids */
@@ -374,6 +374,13 @@ video {
     grid-template-columns: 5% 1fr 5%;
     grid-template-rows: minmax(min-content, max-content);
     grid-template-areas: 'element-detail3 s-h2 .''. sports-box .''. s-a .';
+
+}
+
+.picsport {
+    background-image: url(../images/Web\ 1920\ –\ 1.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
 .testimonial-grid {
@@ -1428,6 +1435,12 @@ select {
     .icon-size {
         font-size: 3.0rem;
     }
+
+    /* video pc */
+    video {
+        width: 100%;
+        height: 94vh;
+    } 
 
       /* FOOTER PC */
 
