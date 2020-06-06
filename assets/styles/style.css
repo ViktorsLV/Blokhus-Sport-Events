@@ -22,13 +22,13 @@
 :root {
     --black: #000000;
     --white: #ffffff;
-    --green: #6AB187;
+    --blue-hover: rgb(6, 100, 128);
     --blue: #04485D;
     --orange:#D3A770 ;
-    --sand: #F4CC70;
+    --sand: rgb(238, 188, 128);
     --gray: #585858;
     --dark-gray: #292929;
-    --orange-hover: rgb(250, 120, 7);
+    --orange-hover: rgb(240, 190, 134);
 }
 
 html {
@@ -143,7 +143,7 @@ ul.menu-nav.show, a.menu-logo.show {
 }
 
 .nav-item .current {
-    color: var(--sand);
+    color: var(--orange-hover);
     border-bottom: 2px solid var(--sand);
 }
 
@@ -722,7 +722,7 @@ section.gallery-grid>i {
 
 .statistic-community {
     grid-area: community;
-    background-image: url(../images/box1_membership.jpg);
+    background-image: url(../images/box2_membership.jpg);
 }
 
 .statistic-tourists {
@@ -885,6 +885,10 @@ section.gallery-grid>i {
     color: var(--white);
 }
 
+.m-btn:hover {
+    background-color: var(--blue-hover);
+}
+
 .subscribe .benefits {
     text-align: left;
 }
@@ -1007,7 +1011,7 @@ footer p {
 
 .membership-box, .newsletter-box {
     margin-top: 8%;
-    background-image: url(../images/membership_box.jpg);
+    background-image: url(../images/membership_box1.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     width: 100%;
@@ -1040,12 +1044,20 @@ footer p {
     box-shadow: 0px 4px 8px rgba(141, 58, 58, 0.25);
 }
 
+.big-btn:hover {
+    background-color: var(--orange-hover);
+}
+
 .newsletter-box p {
     margin: 0% 0% 3% 0%;
 }
 
 .newsletter-box a {
     background-color: var(--blue);
+}
+
+.newsletter-box a:hover {
+    background-color: var(--blue-hover);
 }
 
 input[type=text], select {
@@ -1306,7 +1318,7 @@ input[type=text], select {
     }
     .sports-grid a:hover, .article-preview-grid a:hover, .event-grid a:hover {
         transition: all 0.5s;
-        background-color: rgb(250, 120, 7);
+        background-color: var(--orange-hover);
         /* transform: scale(0.9); */
     }
     .sports-grid a:hover span, .article-preview-grid a:hover span, .event-grid a:hover span {
@@ -1624,7 +1636,7 @@ input[type=text], select {
         background-image: url(../images/pc_membershipbox.jpg);
     }
     .newsletter-box {
-        background-image: url(../images/pc_newletterbox.jpg);
+        background-image: url(../images/pc_newsletterbox.jpg);
     }
     .message-box {
         padding: 4%;
