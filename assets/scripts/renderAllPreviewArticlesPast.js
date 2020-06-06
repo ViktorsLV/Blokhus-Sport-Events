@@ -82,3 +82,6 @@ function findPreviewByIDPast(id){
 };
 
 getPreviewFromWPPast();
+
+
+/*Prev and Next functionality*/

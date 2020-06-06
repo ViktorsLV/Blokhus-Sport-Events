@@ -19,9 +19,7 @@
     font-family: 'Montserrat', sans-serif;
 }
 
-
-
- :root {
+:root {
     --black: #000000;
     --white: #ffffff;
     --green: #6AB187;
@@ -30,6 +28,7 @@
     --sand: #F4CC70;
     --gray: #585858;
     --dark-gray: #292929;
+    --orange-hover: rgb(250, 120, 7);
 }
 
 html {
@@ -56,12 +55,7 @@ h4 {
     font-size: 1.8rem;
 }
 
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
+h1, h2, h3, h4, h5, h6 {
     line-height: 1.2;
     color: var(--dark-gray);
 }
@@ -78,7 +72,6 @@ p {
 a {
     font-size: 1rem;
 }
-
 
 /* MENU STYLING */
 
@@ -107,8 +100,7 @@ header {
     visibility: visible;
 }
 
-ul.menu-nav.show,
-a.menu-logo.show {
+ul.menu-nav.show, a.menu-logo.show {
     transform: translate3d(0, 0, 0);
 }
 
@@ -137,7 +129,6 @@ a.menu-logo.show {
     transition: all 0.5s ease-out;
 }
 
-
 /* Styling nav items individual */
 
 .menu .nav-link {
@@ -155,7 +146,6 @@ a.menu-logo.show {
     color: var(--sand);
     border-bottom: 2px solid var(--sand);
 }
-
 
 /* .current .nav-dropdown-link {
     border-bottom: 2px solid var(--sand);
@@ -177,7 +167,6 @@ a.menu-logo.show {
     transition-delay: 0.4s;
 }
 
-
 /* CLOSING STATE BURGER*/
 
 .menu-btn.close {
@@ -195,7 +184,6 @@ a.menu-logo.show {
 .menu-btn.close .btn-line:nth-child(3) {
     transform: rotate(-45deg) translate(5px, -7px);
 }
-
 
 /* Styling nav items together */
 
@@ -230,7 +218,6 @@ a.menu-logo.show {
 .nav-item.show {
     transform: translate3d(0, 0, 0);
 }
-
 
 /* DROPDOWN */
 
@@ -267,9 +254,7 @@ a.menu-logo.show {
     padding-left: 5%;
 }
 
-
 /* MENU STYLING END */
-
 
 /* HERO IMAGE */
 
@@ -293,7 +278,6 @@ a.menu-logo.show {
     background-color: var(--white);
     opacity: 0.7;
 }
-
 
 /* LANDING PAGE*/
 
@@ -334,14 +318,12 @@ a.menu-logo.show {
     display: none;
 }
 
-
 /* VIDEO  for mobile + tablet responsive */
 
 video {
-    width: 100% ;
+    width: 100%;
     height: auto;
-  }
-
+}
 
 /* All grids */
 
@@ -374,7 +356,6 @@ video {
     grid-template-columns: 5% 1fr 5%;
     grid-template-rows: minmax(min-content, max-content);
     grid-template-areas: 'element-detail3 s-h2 .''. sports-box .''. s-a .';
-
 }
 
 .picsport {
@@ -392,7 +373,6 @@ video {
     grid-template-rows: minmax(min-content, max-content);
     grid-template-areas: '. . c-h2 . .''. a-l c-img a-r .''. . c-text . .''. . c-dots . .''. . . . .';
 }
-
 
 /* All grids end */
 
@@ -464,7 +444,6 @@ video {
     width: 39%;
     font-size: 1.2rem;
 }
-
 
 /* Orange border on headings */
 
@@ -547,7 +526,6 @@ video {
     margin-bottom: 5%;
 }
 
-
 /* STYLING FOR ALL BIG BUTTONS */
 
 .all-btn {
@@ -575,13 +553,11 @@ video {
     color: var(--dark-gray);
 }
 
-
 /*GLOBAL MARGIN */
 
 .section-margin {
     margin-top: 20%;
 }
-
 
 /* TESTIMONIALS */
 
@@ -646,8 +622,7 @@ section.gallery-grid>i {
     transition: background-color 0.6s ease;
 }
 
-.active,
-.dot:hover {
+.active, .dot:hover {
     background-color: var(--dark-gray);
 }
 
@@ -665,11 +640,9 @@ section.gallery-grid>i {
     margin: auto 0;
 }
 
-
 /* SPORTS PAGE */
 
-.sports-text,
-.membership-text {
+.sports-text, .membership-text {
     background-color: var(--white);
     width: 80%;
     height: 20%;
@@ -683,7 +656,6 @@ section.gallery-grid>i {
 .sports-main .explore-grid {
     margin-top: 8%;
 }
-
 
 /* UPCOMING EVENTS PAGE */
 
@@ -716,7 +688,6 @@ section.gallery-grid>i {
     color: var(--blue);
 }
 
-
 /* MEMBERS PAGE */
 
 .membership-main .explore-grid {
@@ -740,8 +711,7 @@ section.gallery-grid>i {
     margin: 2% 0;
 }
 
-.statistic-box h3,
-.statistic-box p {
+.statistic-box h3, .statistic-box p {
     color: var(--white);
 }
 
@@ -868,8 +838,7 @@ section.gallery-grid>i {
     padding: 5%;
 }
 
-.subscribe h3,
-.subscribe p {
+.subscribe h3, .subscribe p {
     color: var(--white);
 }
 
@@ -928,12 +897,9 @@ section.gallery-grid>i {
     padding-right: 4%;
 }
 
-.subscribe h3,
-.subscribe form,
-.subscribe a {
+.subscribe h3, .subscribe form, .subscribe a {
     text-align: center;
 }
-
 
 /*Upcoming Article*/
 
@@ -948,17 +914,13 @@ section.gallery-grid>i {
     color: var(--gray);
 }
 
-.article-icon-info .grid-i1,
-.article-icon-info .grid-i2,
-.article-icon-info .grid-i3,
-.article-icon-info .grid-i4 {
+.article-icon-info .grid-i1, .article-icon-info .grid-i2, .article-icon-info .grid-i3, .article-icon-info .grid-i4 {
     display: none;
 }
 
 .events-btn-pc {
     display: none;
 }
-
 
 /*PAST Event Article*/
 
@@ -973,13 +935,11 @@ section.gallery-grid>i {
     grid-area: g-img;
 }
 
-
 /**/
 
 .preview-description {
     display: none;
 }
-
 
 /* FOOTER MOBILE */
 
@@ -1038,14 +998,14 @@ footer p {
 }
 
 .footer-item {
-    padding-top: 3%;
+    padding-top: 2%;
 }
 
+/* END OF FOOTER */
 
 /* MEMBERSHIP+NEWSLETTER BOX */
 
-.membership-box,
-.newsletter-box {
+.membership-box, .newsletter-box {
     margin-top: 8%;
     background-image: url(../images/membership_box.jpg);
     background-repeat: no-repeat;
@@ -1088,8 +1048,7 @@ footer p {
     background-color: var(--blue);
 }
 
-input[type=text],
-select {
+input[type=text], select {
     width: 85%;
     padding: 6px 15px;
     margin: 18px 0;
@@ -1099,12 +1058,40 @@ select {
     box-sizing: border-box;
 }
 
+/* BACK TO TOP BUTTON */
 
-/* END OF FOOTER */
+#topBtn {
+    display: none;
+    position: fixed;
+    bottom: 20px;
+    right: 30px;
+    font-size: 18px;
+    border: none;
+    outline: none;
+    background-color: var(--orange);
+    color: white;
+    cursor: pointer;
+    padding: 15px;
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+}
 
+#topBtn:hover {
+    background-color: var(--orange-hover);
+}
+
+/* SCROLLBAR COLOR CHANGE */
+
+::-webkit-scrollbar-thumb {
+    background: var(--orange);
+}
+
+::-webkit-scrollbar {
+    width: 10px;
+}
 
 /* QUERIES START */
-
 
 /*Tablet*/
 
@@ -1120,15 +1107,10 @@ select {
         -webkit-border-radius: 1px;
         object-fit: cover;
     }
-    .explore-grid,
-    .event-grid,
-    .sports-grid,
-    .map-grid,
-    .statistics-grid {
+    .explore-grid, .event-grid, .sports-grid, .map-grid, .statistics-grid {
         grid-template-columns: 10% 1fr 10%;
     }
-    .testimonial-grid,
-    .article-grid {
+    .testimonial-grid, .article-grid {
         grid-template-columns: 10% 5% 1fr 5% 10%;
     }
     .article-preview-grid {
@@ -1141,8 +1123,6 @@ select {
     .index-main form input {
         margin-bottom: 5%;
     }
-   
-
     .all-btn {
         padding: 2% 5%;
     }
@@ -1172,8 +1152,7 @@ select {
     .article-grid {
         text-align: center;
     }
-    .article-icon-info p,
-    .article-text-info p {
+    .article-icon-info p, .article-text-info p {
         text-align: left;
     }
     /*past article*/
@@ -1194,17 +1173,13 @@ select {
         margin: 18px 0 36px 0;
     }
     /*Upcoming article*/
-    .grid-i1,
-    .grid-i2,
-    .grid-i3,
-    .grid-i4 {
+    .grid-i1, .grid-i2, .grid-i3, .grid-i4 {
         display: none;
     }
     .events-btn-pc {
         display: none;
     }
 }
-
 
 /*PC*/
 
@@ -1221,7 +1196,6 @@ select {
     .menu-btn {
         display: none;
     }
-
     .menu {
         flex-direction: row;
         background: none;
@@ -1311,17 +1285,13 @@ select {
         margin: 4% 0% 0% auto;
     }
     /* BUTTON HOVER EFFECTS */
-    .sports-grid a span,
-    .article-preview-grid a span,
-    .event-grid a span {
+    .sports-grid a span, .article-preview-grid a span, .event-grid a span {
         cursor: pointer;
         display: inline-block;
         position: relative;
         transition: all 0.5s;
     }
-    .sports-grid a span::after,
-    .article-preview-grid a span::after,
-    .event-grid a span::after {
+    .sports-grid a span::after, .article-preview-grid a span::after, .event-grid a span::after {
         content: '\279C';
         position: absolute;
         opacity: 0;
@@ -1329,30 +1299,22 @@ select {
         right: -30px;
         transition: 0.5s;
     }
-    .sports-grid a:hover span::after,
-    .article-preview-grid a:hover span::after,
-    .event-grid a:hover span::after {
+    .sports-grid a:hover span::after, .article-preview-grid a:hover span::after, .event-grid a:hover span::after {
         opacity: 1;
         right: 5px;
         color: var(--white);
     }
-    .sports-grid a:hover,
-    .article-preview-grid a:hover,
-    .event-grid a:hover {
+    .sports-grid a:hover, .article-preview-grid a:hover, .event-grid a:hover {
         transition: all 0.5s;
         background-color: rgb(250, 120, 7);
         /* transform: scale(0.9); */
     }
-    .sports-grid a:hover span,
-    .article-preview-grid a:hover span,
-    .event-grid a:hover span {
+    .sports-grid a:hover span, .article-preview-grid a:hover span, .event-grid a:hover span {
         padding-right: 25px;
     }
-
     .article-preview-grid.mobile-none {
         display: grid;
     }
-
     a.grid-line-one:hover {
         background-color: var(--white);
     }
@@ -1420,8 +1382,7 @@ select {
         align-items: flex-end;
         flex-direction: row;
     }
-    .go a,
-    .go a>i {
+    .go a, .go a>i {
         color: var(--blue);
         font-size: 2rem;
         margin-bottom: 5%;
@@ -1431,61 +1392,58 @@ select {
     .pc-landing-grid .go a i {
         margin-left: 10px;
     }
-
     .icon-size {
         font-size: 3.0rem;
     }
-
     /* video pc */
     video {
         width: 100%;
         height: calc(100vh - 50px);
-    } 
-
-      /* FOOTER PC */
-
-      .footer-grid ul li {
+    }
+    /* FOOTER PC */
+    .footer {
+        padding: 1% 10%;
+    }
+    .footer-grid ul li {
         list-style: none;
         margin: 0% 7%;
-        font-size: 1.4rem;
     }
-    .footer-grid ul{
-        list-style: none; 
+    .footer-grid ul {
+        list-style: none;
         display: flex;
         flex-direction: row;
-        margin: 2% auto;
+        margin: 1% auto;
         justify-content: center;
-
-       }
-
-       footer span {
-           color: var(--orange);
-           font-weight: 900;
-       }
-
-       footer {
+    }
+    .footer-grid ul li a {
+        text-decoration: none;
+        color: white;
+        font-size: 1.4rem;
+    }
+    .footer-grid ul li a:hover {
+        color: var(--sand);
+    }
+    footer span {
+        color: var(--orange);
+        font-weight: 900;
+    }
+    footer {
         grid-template-areas: "logonav" "navitems" "name""icons""info";
-       }
-
-       .navitems {
-           grid-area: navitems;
-       }
-
-       .icons {
-           width: 20%;
-       }
-
-       .logonav {
-           grid-area: logonav;
-           height: 80px;
-           width: 80px;
-           margin: 0 auto;
-       }
-
-    
+    }
+    .navitems {
+        grid-area: navitems;
+    }
+    .icons {
+        width: 20%;
+    }
+    .logonav {
+        grid-area: logonav;
+        height: 80px;
+        width: 80px;
+        margin: 0 auto;
+    }
     /*Upcoming Article*/
-    .event-grid,
-    .sports-grid {
+    .event-grid, .sports-grid {
         grid-template-columns: 15% 1fr 15%;
     }
     .article-grid {
@@ -1538,10 +1496,7 @@ select {
         grid-area: g-i4;
         margin-top: 3%;
     }
-    .article-icon-info .grid-i1,
-    .article-icon-info .grid-i2,
-    .article-icon-info .grid-i3,
-    .article-icon-info .grid-i4 {
+    .article-icon-info .grid-i1, .article-icon-info .grid-i2, .article-icon-info .grid-i3, .article-icon-info .grid-i4 {
         display: grid;
     }
     .article-text-info {
@@ -1608,24 +1563,15 @@ select {
         display: grid;
         grid-template-columns: 25% 25% 25% 25%;
         grid-template-columns: 6fr 1fr 7fr;
-
         grid-template-rows: minmax(min-content, max-content);
-        grid-template-areas: 
-       /*  'grid-image grid-image grid-image grid-image'
+        grid-template-areas: /*  'grid-image grid-image grid-image grid-image'
         'grid-image grid-image grid-image grid-image'
         'line-one line-one line-one line-one' 
         'line-two line-two line-two line-two'
         'line-three line-three line-three line-three'
         'pc-desk pc-desk pc-desk pc-desk'
         'pc-a-btn pc-a-btn pc-a-btn pc-a-btn'; */
-
-        'grid-image . line-one'
-        'grid-image . pc-desk'
-        'grid-image . line-two'
-        'grid-image . line-three'
-        'grid-image . pc-a-btn'
-        ;
-
+        'grid-image . line-one' 'grid-image . pc-desk' 'grid-image . line-two' 'grid-image . line-three' 'grid-image . pc-a-btn';
     }
     .preview-description {
         display: grid;
@@ -1697,8 +1643,7 @@ select {
         width: 0%;
         height: 0px;
     }
-    input[type=text],
-    select {
+    input[type=text], select {
         width: 50%;
     }
     /* Membership page */
@@ -1728,8 +1673,7 @@ select {
     .membership-body .hero {
         object-position: 0% 20%;
     }
-    .sports-text,
-    .membership-text {
+    .sports-text, .membership-text {
         padding: 1.5% 2%;
         margin-top: -4%;
     }
@@ -1774,8 +1718,7 @@ select {
     .pc-none {
         display: none;
     }
-    .subscribe p,
-    .subscribe h3 {
+    .subscribe p, .subscribe h3 {
         color: var(--black);
     }
     .subscribe {
@@ -1798,7 +1741,6 @@ select {
     .counter {
         font-size: 3rem;
     }
-
     /*SPORTS page*/
     .sports-main .explore-grid {
         grid-template-columns: 15% 1fr 15%;
@@ -1810,8 +1752,7 @@ select {
         justify-self: end;
         margin: 0;
     }
-    .sports-main .explore-grid .article-text p,
-    .past-article-main .article-text p {
+    .sports-main .explore-grid .article-text p, .past-article-main .article-text p {
         width: 60%;
     }
     .article-background {
@@ -1858,22 +1799,16 @@ select {
     .title-testimonial-pc {
         grid-area: t-t-pc;
     }
-    .testimonial-pc-1 img,
-    .testimonial-pc-2 img,
-    .testimonial-pc-3 img {
+    .testimonial-pc-1 img, .testimonial-pc-2 img, .testimonial-pc-3 img {
         width: 65%;
         border-radius: 50%;
         margin-bottom: 8%;
     }
-    .testimonial-pc-1,
-    .testimonial-pc-2,
-    .testimonial-pc-3 {
+    .testimonial-pc-1, .testimonial-pc-2, .testimonial-pc-3 {
         padding: 5%;
         box-shadow: 0px 4px 8px rgba(140, 74, 74, 0.095);
     }
-    .testimonial-pc-1 p,
-    .testimonial-pc-2 p,
-    .testimonial-pc-3 p {
+    .testimonial-pc-1 p, .testimonial-pc-2 p, .testimonial-pc-3 p {
         background-color: var(--blue);
         color: var(--white);
         height: 100px;
@@ -1888,24 +1823,20 @@ select {
     .testimonial-pc-3 {
         grid-area: t-3;
     }
-    .grid-line-two p,
-    .grid-line-three p {
+    .grid-line-two p, .grid-line-three p {
         font-size: 1.2rem;
     }
-    .grid-line-two i,
-    .grid-line-three i {
+    .grid-line-two i, .grid-line-three i {
         font-size: 1.4em;
     }
     .grid-line-one {
         margin-top: 0%;
     }
-    .grid-line-one,
-    .grid-line-three {
+    .grid-line-one, .grid-line-three {
         margin-bottom: 5%;
     }
     /*Upcoming Article*/
 }
-
 
 /* PC */
 
@@ -1928,8 +1859,7 @@ select {
     .article-text>p {
         margin-top: 1%;
     }
-    a.desktop-all-btn,
-    a.sports-a {
+    a.desktop-all-btn, a.sports-a {
         font-size: 1.4rem;
     }
     .logo {
@@ -1969,8 +1899,7 @@ select {
     .message-box {
         padding: 7%;
     }
-    input[type=text],
-    select {
+    input[type=text], select {
         width: 40%;
         padding: 10px 13px;
         margin: 0px 0 36px 0;
@@ -1979,9 +1908,7 @@ select {
         margin: 0px auto 2.7% auto;
         font-size: 2.3rem;
     }
-    .testimonial-pc-1 p,
-    .testimonial-pc-2 p,
-    .testimonial-pc-3 p {
+    .testimonial-pc-1 p, .testimonial-pc-2 p, .testimonial-pc-3 p {
         height: 115px;
         padding: 4%;
     }
@@ -1992,8 +1919,7 @@ select {
         padding: 5%;
     }
     /* sport page */
-    .sports-text,
-    .membership-text {
+    .sports-text, .membership-text {
         width: 70%;
     }
     .sports-main .explore-grid {
@@ -2012,8 +1938,7 @@ select {
     .upcoming-events-main .event-grid {
         margin-top: 3%;
     }
-    .event-grid,
-    .sports-grid {
+    .event-grid, .sports-grid {
         grid-template-columns: 15% 1fr 15%;
     }
     .article-grid {
@@ -2050,7 +1975,4 @@ select {
     .past-event-images img {
         height: 300px;
     }
-
-
-  
 }
