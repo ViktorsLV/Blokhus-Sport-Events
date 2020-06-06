@@ -10,7 +10,9 @@
     <script src="assets/scripts/main.js" defer></script>
     <script src="assets/scripts/slider.js" defer></script>
     <script src="assets/scripts/fetchArticles.js" defer></script>
+    <script src="assets/scripts/fetchPastArticles.js" defer></script>
     <script src="assets/scripts/renderPreviewArticle.js" defer></script>
+    <script src="assets/scripts/renderPastPreviewArticle.js" defer></script>
     <link rel="shortcut icon" href="assets/images/logo.png" type="image/x-icon">
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700&display=swap" rel="stylesheet">
@@ -290,11 +292,11 @@
         </section>
 
         <!-- PAST EVENTS ARTICLES -->
-        <section class="event-grid section-margin" id="event-grid" data-aos="fade-left" data-aos-delay="250" data-aos-duration="1200">
+        <section class="event-grid section-margin" data-aos="fade-left" data-aos-delay="250" data-aos-duration="1200">
             <div class="element-detail2"></div>
             <h2 class="text-primary article-h2">Past Events</h2>
-            <section class="flex event-box">
-                <article class="article-preview-grid">
+            <section class="flex event-box" id="past-event-grid">
+                <!-- <article class="article-preview-grid">
                     <img class="grid-image" src="assets/images/article.jpg" alt="article image">
                     <a class="grid-line-one " href="">
                         <h3 class="grid-line-one text-primary">Swim season opener</h3>
@@ -386,7 +388,7 @@
                     </div>
                     <a class="article-btn fifty50 text-secondary pc-article-btn mobile-none" href="upcoming-article.html"><span>Read&nbsp;more</a>
                 </article>
-                <a class="all-btn text-secondary events-btn" href="upcoming-events.html">See all events</a>
+                <a class="all-btn text-secondary events-btn" href="upcoming-events.html">See all events</a> -->
             </section>
             <a class="all-btn text-secondary events-btn mobile-none desktop-all-btn" href="upcoming-events.html"><span>See all events</span></a>
 

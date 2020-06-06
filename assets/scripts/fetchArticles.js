@@ -7,7 +7,6 @@ let articleSection = document.querySelector("#upcoming-article-js"); //section w
 
 
 const upcomingCatId = 2; //ID from wp for the upcoming-event category
-const pastCatID = 3; //ID from wp for the past-event category
 
 let ArticleList;
 

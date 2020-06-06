@@ -1360,11 +1360,11 @@ select {
     .pc-landing-grid {
         position: relative;
         display: grid;
-        grid-template-columns: 10% 35% 5% 50%;
+        grid-template-columns: 5% 40% 5% 50%;
         grid-template-rows: 5% 2fr 1fr 2fr 1fr;
         grid-template-areas: '. . . video''. h-h1 . video''. quote . video''. pc-e-grid . video''. go . video';
     }
-    .upcoming-article .explore-grid {
+    .upcoming-article .explore-grid, .index-main .explore-grid {
         grid-template-columns: 1fr;
     }
     .past-article-main .explore-grid {
@@ -1390,7 +1390,7 @@ select {
         font-size: 5rem;
     }
     .hero-h1 h1 {
-        font-size: 5rem;
+        font-size: 4.5rem;
     }
     .hero-h1 span {
         margin-left: 10%;
@@ -1439,7 +1439,7 @@ select {
     /* video pc */
     video {
         width: 100%;
-        height: 94vh;
+        height: calc(100vh - 50px);
     } 
 
       /* FOOTER PC */
@@ -1964,7 +1964,7 @@ select {
         width: 40%;
     }
     .quote {
-        margin-left: 60px;
+        /* margin-left: 60px; */
     }
     .message-box {
         padding: 7%;
