@@ -306,6 +306,11 @@ ul.menu-nav.show, a.menu-logo.show {
     display: none;
 }
 
+.text-hero-mobile {
+    text-align: center;
+    margin: 5% 0% 8% 0%;
+}
+
 .flex {
     display: flex;
     flex-direction: column;
@@ -767,6 +772,10 @@ section.gallery-grid>i {
     margin-top: 10%;
 }
 
+.benefits strong {
+    color: var(--blue);
+}
+
 .membership-sub-grid {
     position: relative;
     display: grid;
@@ -1139,6 +1148,8 @@ input[type=text], select {
     border-radius: 5px;
     box-sizing: border-box;
 }
+
+
 
 /* BACK TO TOP BUTTON */
 
