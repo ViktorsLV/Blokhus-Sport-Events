@@ -61,7 +61,7 @@ function renderArticle(){
                 </article>
             </section>
             <section class="map-grid pc-map-grid">
-                <img class="map-img" src="assets/images/article.jpg" alt="${Article.acf.location}">
+                <iframe class="map-img" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d34532.76001792063!2d9.568283433887109!3d57.251576930944545!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x464920eea1419f6f%3A0xdef3f156e0c5b762!2s9492%20Blokhus!5e0!3m2!1sen!2sdk!4v1591518025440!5m2!1sen!2sdk" width="100%" height="100%" style="border:0;"></iframe>
                 <div class="flex-normal map-media text-secondary">
                     <p>Share this event:</p>
                     <i class="fab fa-facebook fa-2x"></i>
