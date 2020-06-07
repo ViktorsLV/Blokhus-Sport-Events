@@ -1435,6 +1435,14 @@ input[type=text], select {
     .footer-grid ul li a:hover {
         color: var(--sand);
     }
+    .footer-icon a {
+        font-size: 2.5rem;
+        text-decoration: none;
+        color: white;   
+    }
+    .footer-icon a:hover {
+        color: var(--sand);
+    }
     footer span {
         color: var(--orange);
         font-weight: 900;
