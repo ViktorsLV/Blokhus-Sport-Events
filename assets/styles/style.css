@@ -1682,6 +1682,14 @@ input[type=text], select {
         height: 40vh;
         object-position: 0% 72%;
     }
+    .upcoming-article .hero {
+        object-position: bottom;
+    }
+
+    .past-article-main .hero {
+        object-position: initial;
+    }
+
     .membership-body .hero {
         object-position: 0% 20%;
     }
