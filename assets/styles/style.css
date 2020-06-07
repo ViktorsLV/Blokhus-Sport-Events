@@ -1692,11 +1692,13 @@ input[type=text], select {
         object-position: 0% 72%;
     }
     .upcoming-article .hero {
-        object-position: bottom;
+        object-position: initial;
+        height: 65vh;
     }
 
     .past-article-main .hero {
         object-position: initial;
+        height: 65vh;
     }
 
     .membership-body .hero {
