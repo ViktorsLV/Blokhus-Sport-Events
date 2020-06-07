@@ -14,13 +14,13 @@ function renderPastPreviewArticle(){
             </a>
             <div class="grid-line-two">
                 <div class="flex-normal">
-                    <i class="fas fa-calendar-alt fa-2x"></i>
+                <i class="fas fa-user fa-2x"></i>
                     <p class="text-secondary">Author: ${Preview.acf.author}</p>
                 </div>
             </div>
             <div class="grid-line-three">
                 <div class="flex-normal fifty50">
-                    <i class="fas fa-calendar-alt fa-2x"></i>
+                <i class="fas fa-edit fa-2x"></i>
                     <p class="text-secondary">${Preview.acf.posted_on}</p>
                 </div>
                 <a class="article-btn fifty50 text-secondary" href="past-article.html?${Preview.id}">Read&nbsp;more</a>
@@ -44,12 +44,13 @@ function renderPastPreviewArticle(){
             </a>
             <div class="grid-line-two">
                 <div class="flex-normal">
+                <i class="fas fa-user fa-2x"></i>
                     <p class="text-secondary">${Preview.acf.author}</p>
                 </div>
             </div>
             <div class="grid-line-three">
                 <div class="flex-normal fifty50">
-                    <i class="fas fa-calendar-alt fa-2x"></i>
+                <i class="fas fa-edit fa-2x"></i>
                     <p class="text-secondary">${Preview.acf.posted_on}</p>
                 </div>
                 <a class="article-btn fifty50 text-secondary" href="past-article.html?${Preview.id}">Read&nbsp;more</a>

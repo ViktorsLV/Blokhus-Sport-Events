@@ -1435,6 +1435,14 @@ input[type=text], select {
     .footer-grid ul li a:hover {
         color: var(--sand);
     }
+    .footer-icon a {
+        font-size: 2.5rem;
+        text-decoration: none;
+        color: white;   
+    }
+    .footer-icon a:hover {
+        color: var(--sand);
+    }
     footer span {
         color: var(--orange);
         font-weight: 900;
@@ -1532,6 +1540,7 @@ input[type=text], select {
     }
     .pc-grid-map {
         display: grid;
+        margin-top: 7%;
         grid-template-columns: 15% 1fr 1fr 15%;
         grid-template-rows: minmax(min-content, max-content);
         grid-template-areas: '. pc-e-grid pc-m-grid .';
@@ -1675,6 +1684,16 @@ input[type=text], select {
         height: 40vh;
         object-position: 0% 72%;
     }
+    .upcoming-article .hero {
+        object-position: initial;
+        height: 65vh;
+    }
+
+    .past-article-main .hero {
+        object-position: initial;
+        height: 65vh;
+    }
+
     .membership-body .hero {
         object-position: 0% 20%;
     }
@@ -1981,3 +2000,10 @@ input[type=text], select {
         height: 300px;
     }
 }
+
+
+
+/* SOURCES */
+/* Images + video provided by https://www.visitjammerbugten.dk/ + Blokhus Sport and Events Facebook page */
+/* Icons provided by Font Awesome */
+/* Animations provided by AOS animation gallery; Available at https://github.com/michalsnik/aos  for free use*/
