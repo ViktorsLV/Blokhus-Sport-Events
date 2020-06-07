@@ -707,6 +707,17 @@ section.gallery-grid>i {
     margin-top: 8%;
 }
 
+.price {
+    text-align: center;
+    margin: 3% 0% 0% 0%;
+    font-weight: bolder;
+    font-size: 1.8rem;
+}
+
+.price span {
+    color: var(--orange);
+}
+
 .statistics-grid {
     position: relative;
     display: grid;
@@ -976,9 +987,9 @@ footer {
     height: auto;
     color: var(--white);
     background-color: var(--blue);
-    padding: 3% 10%;
+    padding: 4% 10%;
     margin-top: 5%;
-    grid-template-areas: "name""icons""info";
+    grid-template-areas: "name""icons" "flags" "info";
 }
 
 footer p {
@@ -1000,6 +1011,36 @@ footer p {
     justify-content: space-around;
     width: 40%;
     margin: 0 auto;
+}
+
+.footer-grid ul li a {
+    text-decoration: none;
+    color: white;
+    font-size: 1.4rem;
+}
+.footer-grid ul li a:hover {
+    color: var(--sand);
+}
+.footer-icon a {
+    font-size: 2.5rem;
+    text-decoration: none;
+    color: white;   
+}
+
+.footer-flags {
+    grid-area:flags;
+    display: flex;
+    justify-content: center;
+    margin-top: 2%;
+}
+
+
+.footer-flags a img {
+    width: 20px;
+}
+
+.footer-flags a {
+    margin: 1%;
 }
 
 .name {
@@ -1030,6 +1071,9 @@ footer p {
     padding-top: 2%;
 }
 
+.lessopacity {
+    opacity: 0.4;
+}
 
 /* END OF FOOTER */
 
@@ -1483,7 +1527,7 @@ input[type=text], select {
         height: calc(100vh - 50px);
     }
     /* FOOTER PC */
-    .footer {
+    footer {
         padding: 1% 10%;
     }
     .footer-grid ul li {
@@ -1497,19 +1541,7 @@ input[type=text], select {
         margin: 1% auto;
         justify-content: center;
     }
-    .footer-grid ul li a {
-        text-decoration: none;
-        color: white;
-        font-size: 1.4rem;
-    }
-    .footer-grid ul li a:hover {
-        color: var(--sand);
-    }
-    .footer-icon a {
-        font-size: 2.5rem;
-        text-decoration: none;
-        color: white;   
-    }
+   
     .footer-icon a:hover {
         color: var(--sand);
     }
@@ -1518,11 +1550,13 @@ input[type=text], select {
         font-weight: 900;
     }
     footer {
-        grid-template-areas: "logonav" "navitems" "name""icons""info";
+        grid-template-areas: "logonav" "navitems" "name""icons""flags""info";
     }
     .navitems {
         grid-area: navitems;
     }
+
+      
     .icons {
         width: 20%;
     }
