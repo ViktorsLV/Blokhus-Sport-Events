@@ -279,6 +279,19 @@ ul.menu-nav.show, a.menu-logo.show {
     opacity: 0.7;
 }
 
+.pc-none-img {
+    display: block;
+}
+.membership-main .hero,
+.sports-main .hero,
+.upcoming-events-main .hero,
+.past-article-main .hero,
+.upcoming-article .hero {
+    padding-top: 70px;
+    margin-top: 0;
+    height: 47vh;
+}
+
 /* LANDING PAGE*/
 
 .hero-h1 {
@@ -1402,6 +1415,18 @@ input[type=text], select {
     .pc-display-none {
         display: none;
     }
+    .pc-none-img {
+        display: none;
+    }
+    .membership-main .hero,
+    .sports-main .hero,
+    .upcoming-events-main .hero,
+    .past-article-main .hero,
+    .upcoming-article .hero
+     {
+        padding-top: 0;
+        height: 40vh;
+    }
     .hero-h1 {
         margin: 50px 0 0 0;
         grid-area: h-h1;
@@ -1729,16 +1754,14 @@ input[type=text], select {
         height: 40vh;
         object-position: 0% 72%;
     }
+
     .upcoming-article .hero {
         object-position: initial;
-        height: 65vh;
     }
 
     .past-article-main .hero {
         object-position: initial;
-        height: 65vh;
     }
-
     .membership-body .hero {
         object-position: 0% 20%;
     }
