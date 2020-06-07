@@ -1260,7 +1260,7 @@ input[type=text], select {
     /* DROPDOWN */
     .menu-nav-dropdown {
         position: absolute;
-        min-width: 200px;
+        min-width: 225px;
         top: 50px;
     }
     .menu>.menu-nav>.nav-item:hover>.menu-nav-dropdown {
