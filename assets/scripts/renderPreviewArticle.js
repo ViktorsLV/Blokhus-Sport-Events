@@ -38,7 +38,7 @@ function renderPreviewArticle(){
         previewSection.innerHTML += 
         `
         <article class="article-preview-grid mobile-none">
-            <img class="grid-image" src="assets/images/article.jpg" alt="article image">
+            <img class="grid-image" src="${Preview.acf.hero_image}" alt="article image">
             <a class="grid-line-one " href="">
                 <h3 class="text-primary">${Preview.acf.title}</h3>
             </a>
