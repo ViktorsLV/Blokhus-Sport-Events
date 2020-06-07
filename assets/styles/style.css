@@ -1573,16 +1573,9 @@ input[type=text], select {
         border-bottom: none;
         background-color: rgba(248, 248, 248, 0.598);
         display: grid;
-        grid-template-columns: 25% 25% 25% 25%;
         grid-template-columns: 6fr 1fr 7fr;
         grid-template-rows: minmax(min-content, max-content);
-        grid-template-areas: /*  'grid-image grid-image grid-image grid-image'
-        'grid-image grid-image grid-image grid-image'
-        'line-one line-one line-one line-one' 
-        'line-two line-two line-two line-two'
-        'line-three line-three line-three line-three'
-        'pc-desk pc-desk pc-desk pc-desk'
-        'pc-a-btn pc-a-btn pc-a-btn pc-a-btn'; */
+        grid-template-areas:
         'grid-image . line-one' 'grid-image . pc-desk' 'grid-image . line-two' 'grid-image . line-three' 'grid-image . pc-a-btn';
     }
     .preview-description {
