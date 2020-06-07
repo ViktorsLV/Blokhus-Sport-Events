@@ -9,7 +9,7 @@ function renderPreviewArticle(){
         `
         <article class="article-preview-grid">
             <img class="grid-image" src="${Preview.acf.hero_image}" alt="article image">
-            <a class="grid-line-one " href="">
+            <a class="grid-line-one " href="upcoming-article.html?${Preview.id}">
                 <h3 class="text-primary">${Preview.acf.title}</h3>
             </a>
             <div class="grid-line-two">
@@ -39,7 +39,7 @@ function renderPreviewArticle(){
         `
         <article class="article-preview-grid mobile-none">
             <img class="grid-image" src="${Preview.acf.hero_image}" alt="article image">
-            <a class="grid-line-one " href="">
+            <a class="grid-line-one " href="upcoming-article.html?${Preview.id}">
                 <h3 class="text-primary">${Preview.acf.title}</h3>
             </a>
             <div class="grid-line-two">

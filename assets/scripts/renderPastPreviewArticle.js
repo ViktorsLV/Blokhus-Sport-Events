@@ -9,7 +9,7 @@ function renderPastPreviewArticle(){
         `
         <article class="article-preview-grid">
             <img class="grid-image" src="${Preview.acf.past_hero_image}" alt="article image">
-            <a class="grid-line-one " href="">
+            <a class="grid-line-one " href="past-article.html?${Preview.id}">
                 <h3 class="text-primary">${Preview.acf.past_title}</h3>
             </a>
             <div class="grid-line-two">
@@ -28,7 +28,7 @@ function renderPastPreviewArticle(){
             <div class="preview-description">
                 <p class="text-secondary">${Preview.acf.past_description_one.slice(0, 100) + '...'}</p>
             </div>
-            <a class="article-btn fifty50 text-secondary pc-article-btn mobile-none" href="past-article.html?${Preview.id}"><span>Read&nbsp;more</span></a>
+            <a class="article-btn fifty50 text-secondary pc-article-btn mobile-none" href="C"><span>Read&nbsp;more</span></a>
         </article>
     `;
     }),
@@ -39,7 +39,7 @@ function renderPastPreviewArticle(){
         `
         <article class="article-preview-grid mobile-none">
             <img class="grid-image" src="${Preview.acf.past_hero_image}" alt="article image">
-            <a class="grid-line-one " href="">
+            <a class="grid-line-one " href="past-article.html?${Preview.id}">
                 <h3 class="text-primary">${Preview.acf.past_title}</h3>
             </a>
             <div class="grid-line-two">
