@@ -828,9 +828,21 @@ section.gallery-grid>i {
     color: var(--gray);
 }
 
-.map-media i {
+.map-media p {
+    margin: 1% 0;
+}
+
+.map-media a {
     margin-left: 5%;
+    text-decoration: none;
+}
+
+.map-media a i {
     color: var(--orange);
+}
+
+.map-media a i:hover {
+    color: var(--orange-hover);
 }
 
 .subscribe {
@@ -1004,6 +1016,7 @@ footer p {
 .footer-item {
     padding-top: 2%;
 }
+
 
 /* END OF FOOTER */
 
