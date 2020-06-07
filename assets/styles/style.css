@@ -1273,7 +1273,7 @@ input[type=text], select {
     /* DROPDOWN */
     .menu-nav-dropdown {
         position: absolute;
-        min-width: 200px;
+        min-width: 225px;
         top: 50px;
     }
     .menu>.menu-nav>.nav-item:hover>.menu-nav-dropdown {
@@ -1553,6 +1553,7 @@ input[type=text], select {
     }
     .pc-grid-map {
         display: grid;
+        margin-top: 7%;
         grid-template-columns: 15% 1fr 1fr 15%;
         grid-template-rows: minmax(min-content, max-content);
         grid-template-areas: '. pc-e-grid pc-m-grid .';
@@ -1594,16 +1595,9 @@ input[type=text], select {
         border-bottom: none;
         background-color: rgba(248, 248, 248, 0.598);
         display: grid;
-        grid-template-columns: 25% 25% 25% 25%;
         grid-template-columns: 6fr 1fr 7fr;
         grid-template-rows: minmax(min-content, max-content);
-        grid-template-areas: /*  'grid-image grid-image grid-image grid-image'
-        'grid-image grid-image grid-image grid-image'
-        'line-one line-one line-one line-one' 
-        'line-two line-two line-two line-two'
-        'line-three line-three line-three line-three'
-        'pc-desk pc-desk pc-desk pc-desk'
-        'pc-a-btn pc-a-btn pc-a-btn pc-a-btn'; */
+        grid-template-areas:
         'grid-image . line-one' 'grid-image . pc-desk' 'grid-image . line-two' 'grid-image . line-three' 'grid-image . pc-a-btn';
     }
     .preview-description {
@@ -1703,6 +1697,16 @@ input[type=text], select {
         height: 40vh;
         object-position: 0% 72%;
     }
+    .upcoming-article .hero {
+        object-position: initial;
+        height: 65vh;
+    }
+
+    .past-article-main .hero {
+        object-position: initial;
+        height: 65vh;
+    }
+
     .membership-body .hero {
         object-position: 0% 20%;
     }

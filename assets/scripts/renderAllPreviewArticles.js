@@ -9,7 +9,7 @@ function renderPreviewArticle(){
         `
         <article class="article-preview-grid">
             <img class="grid-image" src="${Preview.acf.hero_image}" alt="article image">
-            <a class="grid-line-one " href="">
+            <a class="grid-line-one " href="upcoming-article.html?${Preview.id}">
                 <h3 class="text-primary">${Preview.acf.title}</h3>
             </a>
             <div class="grid-line-two">
@@ -23,11 +23,12 @@ function renderPreviewArticle(){
                     <i class="fas fa-calendar-alt fa-2x"></i>
                     <p class="text-secondary">${Preview.acf.date}</p>
                 </div>
-                <a class="article-btn fifty50 text-secondary pc-article-btn" href="upcoming-article.html?${Preview.id}">Read&nbsp;more</a>
+                <a class="article-btn fifty50 text-secondary" href="upcoming-article.html?${Preview.id}">Read&nbsp;more</a>
             </div>
             <div class="preview-description">
                 <p class="text-secondary">${Preview.acf.event_description.slice(0, 100) + '...'}</p>
             </div>
+            <a class="article-btn fifty50 text-secondary pc-article-btn mobile-none" href="upcoming-article.html?${Preview.id}"><span>Read&nbsp;more</span></a>
         </article>
     `;
     arr.push(Preview);
@@ -163,7 +164,7 @@ function drawList() {
             `
             <article class="article-preview-grid">
                 <img class="grid-image" src="${pageList[r].acf.hero_image}" alt="article image">
-                <a class="grid-line-one " href="">
+                <a class="grid-line-one " href="upcoming-article.html?${pageList[r].id}">
                     <h3 class="text-primary">${pageList[r].acf.title}</h3>
                 </a>
                 <div class="grid-line-two">
@@ -177,11 +178,12 @@ function drawList() {
                         <i class="fas fa-calendar-alt fa-2x"></i>
                         <p class="text-secondary">${pageList[r].acf.date}</p>
                     </div>
-                    <a class="article-btn fifty50 text-secondary pc-article-btn" href="upcoming-article.html?${pageList[r].id}">Read&nbsp;more</a>
+                    <a class="article-btn fifty50 text-secondary" href="upcoming-article.html?${pageList[r].id}">Read&nbsp;more</a>
                 </div>
                 <div class="preview-description">
                     <p class="text-secondary">${pageList[r].acf.event_description.slice(0, 100) + '...'}</p>
                 </div>
+               <a class="article-btn fifty50 text-secondary pc-article-btn mobile-none" href="upcoming-article.html?${Preview.id}"><span>Read&nbsp;more</span></a>
             </article>
         `;
     }
