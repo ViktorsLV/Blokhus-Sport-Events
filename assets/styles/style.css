@@ -1356,6 +1356,38 @@ input[type=text], select {
     a.grid-line-one:hover {
         background-color: var(--white);
     }
+
+/* SPORT PAGES */
+.sport-volley  {
+    background-image: url(../images/volleyball\ background.jpg);
+}
+.sport-football {
+    background-image: url(../images/football\ background.jpg);
+}
+.sport-handball {
+    background-image: url(../images/handball\ background.jpg);
+}
+.sport-running {
+    background-image: url(../images/running\ background.jpg);
+}
+.sport-swimming {
+    background-image: url(../images/swimming\ background.jpg);
+}
+.sport-horse {
+    background-image: url(../images/horse\ riding\ \ background.jpg);
+}
+.sport-biking {
+    background-image: url(../images/mountain\ biking\ background.jpg);
+}
+.sport-climbing {
+    background-image: url(../images/climbing\ background.jpg);
+}
+
+.sport-volley, .sport-biking, .sport-swimming, .sport-football, .sport-handball, .sport-running, .sport-horse, .sport-climbing {
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
     /*LANDING PAGE*/
     .pc-landing-grid {
         position: relative;
