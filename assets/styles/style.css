@@ -1952,6 +1952,9 @@ input[type=text], select {
     .article-preview-grid p {
         line-height: 1.2;
     }
+    .article-btn {
+        padding: 1% 0%;
+    }
     .newsletter-box .message-box {
         padding: 5%;
     }

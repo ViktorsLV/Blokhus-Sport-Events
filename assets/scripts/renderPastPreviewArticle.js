@@ -45,7 +45,7 @@ function renderPastPreviewArticle(){
             <div class="grid-line-two">
                 <div class="flex-normal">
                 <i class="fas fa-user fa-2x"></i>
-                    <p class="text-secondary">${Preview.acf.author}</p>
+                    <p class="text-secondary">Author: ${Preview.acf.author}</p>
                 </div>
             </div>
             <div class="grid-line-three">
