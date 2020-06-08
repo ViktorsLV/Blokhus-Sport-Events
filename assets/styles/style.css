@@ -1981,16 +1981,16 @@ input[type=text], select {
         max-height: 30px;
     }
     /* SPORTS BOX HOVER EFFECT */
-    .sports a:hover {
+    .sports-main .sports a:hover {
         background-color: var(--orange);
         color: var(--white);
         transform: scale(1.08);
         transition: all 0.6s;
     }
-    .sports a:hover>article h3 {
+    .sports-main .sports a:hover>article h3 {
         color: var(--white);
     }
-    .sports .all-btn:hover {
+    .sports-main .sports .all-btn:hover {
         transform: none;
     }
     /*PC Corrections*/
