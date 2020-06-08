@@ -415,9 +415,10 @@
                 <p class="text-secondary">Do you want to <strong>get notified</strong> about events and opportunities
                     that Blokhus provides? Sign up for the Newsletter!</p>
                 <form action="#">
-                    <input type="text" name="email" placeholder="Your e-mail..">
+                    <input type="text" name="email" placeholder="Your e-mail.." id="newsletter">
                 </form>
-                <a class="big-btn text-secondary " href="#">Subscribe to newsletter</a>
+                <a class="big-btn text-secondary pop-up" onclick="popUp()" href="#newsletter">Subscribe to newsletter</a>
+                <div id="pop-up-message" class="text-secondary">Thank you for subscribing to our newsletter!</div>
             </div>
         </section>
     </main>

@@ -24,7 +24,7 @@
     --white: #ffffff;
     --blue-hover: rgb(6, 100, 128);
     --blue: #04485D;
-    --orange:#D3A770 ;
+    --orange: #D3A770;
     --sand: rgb(238, 188, 128);
     --gray: #585858;
     --dark-gray: #292929;
@@ -35,14 +35,13 @@ html {
     font-size: 10px;
     overflow-x: hidden;
     overflow-y: scroll;
-    line-height: 1.5;
+    line-height: 1.6;
 }
 
 h1 {
     font-size: 3rem;
     text-transform: uppercase;
 }
-
 
 h2 {
     font-size: 2.5rem;
@@ -250,7 +249,7 @@ ul.menu-nav.show, a.menu-logo.show {
 }
 
 .nav-item:nth-child(3)>.nav-link::after {
-    content: '⯆';
+    content: '\2193';
     padding-left: 5%;
 }
 
@@ -282,15 +281,12 @@ ul.menu-nav.show, a.menu-logo.show {
 .pc-none-img {
     display: block;
 }
-.membership-main .hero,
-.sports-main .hero,
-.upcoming-events-main .hero,
-.past-article-main .hero,
-.upcoming-article .hero {
+
+.membership-main .hero, .sports-main .hero, .upcoming-events-main .hero, .past-article-main .hero, .upcoming-article .hero {
     padding-top: 70px;
     margin-top: 0;
     height: 47vh;
-    object-fit:cover;
+    object-fit: cover;
 }
 
 /* LANDING PAGE*/
@@ -1033,22 +1029,23 @@ footer p {
     color: white;
     font-size: 1.4rem;
 }
+
 .footer-grid ul li a:hover {
     color: var(--sand);
 }
+
 .footer-icon a {
     font-size: 2.5rem;
     text-decoration: none;
-    color: white;   
+    color: white;
 }
 
 .footer-flags {
-    grid-area:flags;
+    grid-area: flags;
     display: flex;
     justify-content: center;
     margin-top: 2%;
 }
-
 
 .footer-flags a img {
     width: 20px;
@@ -1156,7 +1153,57 @@ input[type=text], select {
     box-sizing: border-box;
 }
 
+/* Pop-up styling */
 
+/* The snackbar - position it at the bottom and in the middle of the screen */
+
+#pop-up-message {
+    visibility: hidden;
+    min-width: 250px;
+    margin-left: -150px;
+    background-color: var(--orange);
+    color: var(--white);
+    text-align: center;
+    padding: 20px;
+    position: fixed;
+    z-index: 1;
+    left: 50%;
+    bottom: 40px;
+    box-shadow: 0px 4px 8px rgba(140, 74, 74, 0.095);
+    font-size: 1.4rem;
+}
+
+/* Show the snackbar when clicking on a button (class added with JavaScript) */
+
+#pop-up-message.show {
+    visibility: visible;
+    -webkit-animation: fadein 0.5s, fadeout 0.5s 2.5s;
+    animation: fadein 0.5s, fadeout 0.5s 2.5s;
+}
+
+/* Animations to fade the snackbar in and out */
+
+@-webkit-keyframes fadein {
+    from {
+        bottom: 0;
+        opacity: 0;
+    }
+    to {
+        bottom: 40px;
+        opacity: 1;
+    }
+}
+
+@keyframes fadeout {
+    from {
+        bottom: 40px;
+        opacity: 1;
+    }
+    to {
+        bottom: 0;
+        opacity: 0;
+    }
+}
 
 /* BACK TO TOP BUTTON */
 
@@ -1199,29 +1246,23 @@ input[type=text], select {
     html {
         font-size: 16px;
     }
-
     a {
         font-size: 1.2rem;
     }
-
     a span {
-        font-size: 1.2rem ;
+        font-size: 1.2rem;
     }
-
     .sports-main a {
         font-size: 1em;
     }
-
     .sports-grid a {
         font-size: 1em;
     }
-
     p {
         font-size: 1.4rem;
     }
-
     /*index page*/
-      video {
+    video {
         height: 50vh;
         width: 100%;
         border-radius: 1px;
@@ -1296,8 +1337,6 @@ input[type=text], select {
     .membership-body p {
         font-size: 1.4rem;
     }
-
-    
     /*Upcoming article*/
     .grid-i1, .grid-i2, .grid-i3, .grid-i4 {
         display: none;
@@ -1308,9 +1347,7 @@ input[type=text], select {
     .fa-2x {
         font-size: 1.8em;
     }
-
 }
-
 
 /*PC*/
 
@@ -1318,8 +1355,9 @@ input[type=text], select {
     html {
         font-size: 10px;
     }
-
-
+    p {
+        font-size: 1.4rem;
+    }
     header {
         height: fit-content;
         text-align: center;
@@ -1451,38 +1489,35 @@ input[type=text], select {
     a.grid-line-one:hover {
         background-color: var(--white);
     }
-
-/* SPORT PAGES */
-.sport-volley  {
-    background-image: url(../images/volleyball\ background.jpg);
-}
-.sport-football {
-    background-image: url(../images/football\ background.jpg);
-}
-.sport-handball {
-    background-image: url(../images/handball\ background.jpg);
-}
-.sport-running {
-    background-image: url(../images/running\ background.jpg);
-}
-.sport-swimming {
-    background-image: url(../images/swimming\ background.jpg);
-}
-.sport-horse {
-    background-image: url(../images/horse\ riding\ \ background.jpg);
-}
-.sport-biking {
-    background-image: url(../images/mountain\ biking\ background.jpg);
-}
-.sport-climbing {
-    background-image: url(../images/climbing\ background.jpg);
-}
-
-.sport-volley, .sport-biking, .sport-swimming, .sport-football, .sport-handball, .sport-running, .sport-horse, .sport-climbing {
-    background-repeat: no-repeat;
-    background-size: contain;
-}
-
+    /* SPORT PAGES */
+    .sport-volley {
+        background-image: url(../images/volleyball\ background.jpg);
+    }
+    .sport-football {
+        background-image: url(../images/football\ background.jpg);
+    }
+    .sport-handball {
+        background-image: url(../images/handball\ background.jpg);
+    }
+    .sport-running {
+        background-image: url(../images/running\ background.jpg);
+    }
+    .sport-swimming {
+        background-image: url(../images/swimming\ background.jpg);
+    }
+    .sport-horse {
+        background-image: url(../images/horse\ riding\ \ background.jpg);
+    }
+    .sport-biking {
+        background-image: url(../images/mountain\ biking\ background.jpg);
+    }
+    .sport-climbing {
+        background-image: url(../images/climbing\ background.jpg);
+    }
+    .sport-volley, .sport-biking, .sport-swimming, .sport-football, .sport-handball, .sport-running, .sport-horse, .sport-climbing {
+        background-repeat: no-repeat;
+        background-size: contain;
+    }
     /*LANDING PAGE*/
     .pc-landing-grid {
         position: relative;
@@ -1513,20 +1548,13 @@ input[type=text], select {
     .pc-none-img {
         display: none;
     }
-    .membership-main .hero,
-    .sports-main .hero,
-    .upcoming-events-main .hero,
-    .past-article-main .hero,
-    .upcoming-article .hero
-     {
+    .membership-main .hero, .sports-main .hero, .upcoming-events-main .hero, .past-article-main .hero, .upcoming-article .hero {
         padding-top: 0;
         height: 50vh;
     }
-
-    .article-preview-grid h3{
+    .article-preview-grid h3 {
         margin-top: 2%;
     }
-
     .hero-h1 {
         margin: 50px 0 0 0;
         grid-area: h-h1;
@@ -1597,7 +1625,6 @@ input[type=text], select {
         margin: 1% auto;
         justify-content: center;
     }
-   
     .footer-icon a:hover {
         color: var(--sand);
     }
@@ -1611,8 +1638,6 @@ input[type=text], select {
     .navitems {
         grid-area: navitems;
     }
-
-      
     .icons {
         width: 20%;
     }
@@ -1744,8 +1769,7 @@ input[type=text], select {
         display: grid;
         grid-template-columns: 6fr 1fr 7fr;
         grid-template-rows: minmax(min-content, max-content);
-        grid-template-areas:
-        'grid-image . line-one' 'grid-image . pc-desk' 'grid-image . line-two' 'grid-image . line-three' 'grid-image . pc-a-btn';
+        grid-template-areas: 'grid-image . line-one' 'grid-image . pc-desk' 'grid-image . line-two' 'grid-image . line-three' 'grid-image . pc-a-btn';
     }
     .preview-description {
         display: grid;
@@ -1844,11 +1868,9 @@ input[type=text], select {
         height: 40vh;
         object-position: 0% 72%;
     }
-
     .upcoming-article .hero {
         object-position: initial;
     }
-
     .past-article-main .hero {
         object-position: initial;
     }
@@ -2029,12 +2051,6 @@ input[type=text], select {
     a {
         font-size: 1.1rem;
     }
-    /* h1 {
-        font-size: 3.5rem;
-    }
-    h2 {
-        font-size: 3rem;
-    } */
     p {
         font-size: 1.5rem;
     }
@@ -2062,9 +2078,6 @@ input[type=text], select {
     .section-margin {
         margin-top: 5%;
     }
-    /* .pc-landing-grid .go a i {
-        margin-left: 10px;
-    } */
     .article-background {
         width: 164px;
         height: 160px;
@@ -2074,9 +2087,6 @@ input[type=text], select {
     }
     .fifty50 {
         width: 40%;
-    }
-    .quote {
-        /* margin-left: 60px; */
     }
     .message-box {
         padding: 7%;
@@ -2162,9 +2172,9 @@ input[type=text], select {
     }
 }
 
-
-
 /* SOURCES */
+
 /* Images + video provided by https://www.visitjammerbugten.dk/ + Blokhus Sport and Events Facebook page * + Colourbox/
 /* Icons provided by Font Awesome */
+
 /* Animations provided by AOS animation gallery; Available at https://github.com/michalsnik/aos  for free use*/
