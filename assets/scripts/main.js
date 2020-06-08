@@ -20,8 +20,8 @@ function toggleMenu() {
 }
 
 
-/* BACK TO TOP BUTTON */
 
+/* BACK TO TOP BUTTON */
 // Getting the button
 let topButton = document.getElementById("topBtn");
 
