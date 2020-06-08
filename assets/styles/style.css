@@ -43,6 +43,7 @@ h1 {
     text-transform: uppercase;
 }
 
+
 h2 {
     font-size: 2.5rem;
 }
@@ -57,7 +58,6 @@ h4 {
 
 h1, h2, h3, h4, h5, h6 {
     line-height: 1.2;
-    color: var(--dark-gray);
 }
 
 a>h3 {
@@ -65,7 +65,7 @@ a>h3 {
 }
 
 p {
-    font-size: 1.4rem;
+    font-size: 1.2rem;
     color: var(--dark-gray);
 }
 
@@ -290,6 +290,7 @@ ul.menu-nav.show, a.menu-logo.show {
     padding-top: 70px;
     margin-top: 0;
     height: 47vh;
+    object-fit:cover;
 }
 
 /* LANDING PAGE*/
@@ -308,7 +309,8 @@ ul.menu-nav.show, a.menu-logo.show {
 
 .text-hero-mobile {
     text-align: center;
-    margin: 5% 0% 8% 0%;
+    margin: 2% 5% 8% 5%;
+    color: var(--blue);
 }
 
 .flex {
@@ -459,7 +461,7 @@ video {
 }
 
 .fifty50 {
-    width: 39%;
+    width: 45%;
     font-size: 1.2rem;
 }
 
@@ -530,8 +532,8 @@ video {
 
 .article-background {
     background-color: #FCFCFC;
-    width: 130px;
-    height: 130px;
+    width: 140px;
+    height: 140px;
     border-radius: 25%;
     color: var(--gray);
     text-decoration: none;
@@ -757,6 +759,10 @@ section.gallery-grid>i {
 .statistic-tourists {
     grid-area: tourists;
     background-image: url(../images/box3_membership.jpg);
+}
+
+.statistic-tourists, .statistic-community, .statistic-events {
+    background-position: center;
 }
 
 .membership-main .explore-grid {
@@ -1093,6 +1099,7 @@ footer p {
     background-image: url(../images/membership_box1.jpg);
     background-repeat: no-repeat;
     background-size: cover;
+    background-position: center;
     width: 100%;
     border-radius: 40px 0px;
 }
@@ -1142,7 +1149,7 @@ footer p {
 input[type=text], select {
     width: 85%;
     padding: 6px 15px;
-    margin: 18px 0;
+    margin: 18px 0 27px 0;
     display: inline-block;
     border: 1px solid #ccc;
     border-radius: 5px;
@@ -1190,10 +1197,31 @@ input[type=text], select {
 
 @media screen and (min-width: 768px) and (max-width: 1023px) {
     html {
-        font-size: 15px;
+        font-size: 16px;
     }
+
+    a {
+        font-size: 1.2rem;
+    }
+
+    a span {
+        font-size: 1.2rem ;
+    }
+
+    .sports-main a {
+        font-size: 1em;
+    }
+
+    .sports-grid a {
+        font-size: 1em;
+    }
+
+    p {
+        font-size: 1.4rem;
+    }
+
     /*index page*/
-    video {
+      video {
         height: 50vh;
         width: 100%;
         border-radius: 1px;
@@ -1210,8 +1238,8 @@ input[type=text], select {
         grid-template-areas: 'grid-image . line-one''grid-image . description''grid-image . description''grid-image . line-two''grid-image . line-three';
     }
     .article-background {
-        width: 200px;
-        height: 200px;
+        width: 210px;
+        height: 220px;
     }
     .index-main form input {
         margin-bottom: 5%;
@@ -1265,6 +1293,11 @@ input[type=text], select {
     input[type="text"] {
         margin: 18px 0 36px 0;
     }
+    .membership-body p {
+        font-size: 1.4rem;
+    }
+
+    
     /*Upcoming article*/
     .grid-i1, .grid-i2, .grid-i3, .grid-i4 {
         display: none;
@@ -1272,7 +1305,12 @@ input[type=text], select {
     .events-btn-pc {
         display: none;
     }
+    .fa-2x {
+        font-size: 1.8em;
+    }
+
 }
+
 
 /*PC*/
 
@@ -1280,6 +1318,8 @@ input[type=text], select {
     html {
         font-size: 10px;
     }
+
+
     header {
         height: fit-content;
         text-align: center;
@@ -1482,6 +1522,11 @@ input[type=text], select {
         padding-top: 0;
         height: 50vh;
     }
+
+    .article-preview-grid h3{
+        margin-top: 2%;
+    }
+
     .hero-h1 {
         margin: 50px 0 0 0;
         grid-area: h-h1;
@@ -1984,12 +2029,12 @@ input[type=text], select {
     a {
         font-size: 1.1rem;
     }
-    h1 {
+    /* h1 {
         font-size: 3.5rem;
     }
     h2 {
         font-size: 3rem;
-    }
+    } */
     p {
         font-size: 1.5rem;
     }
