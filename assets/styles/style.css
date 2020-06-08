@@ -1057,6 +1057,8 @@ footer p {
     margin: 1%;
 }
 
+
+
 .name {
     grid-area: name;
 }
@@ -1087,6 +1089,7 @@ footer p {
 
 .lessopacity {
     opacity: 0.4;
+    cursor: initial;
 }
 
 /* END OF FOOTER */
