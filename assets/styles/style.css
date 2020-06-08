@@ -1756,7 +1756,7 @@ input[type=text], select {
         background-image: url(../images/pc_newsletterbox.jpg);
     }
     .message-box {
-        padding: 4%;
+        padding: 7%;
     }
     .message-box p {
         margin: 0 auto 2% auto;
