@@ -59,26 +59,28 @@
 
         <section class="filter">
             <h3 class="text-primary">Filter by:</h3>
-            <select name="Categories" id="categories">
-                <option value="sports">Sports</option>
-                <option value="workshops">Workshops</option>
-                <option value="charity">Charity events</option>
-                <option value="others">Others</option>
+            <select name="Categories" class="category" id="categories">
+                <option id="all-cat" value="All-cat">All</option>
+                <option id="sports" value="sports">Sports</option>
+                <option id="workshops" value="workshops">Workshops</option>
+                <option id="charity" value="charity">Charity events</option>
+                <option id="others" value="others">Others</option>
             </select>
 
-            <select name="Month" id="month">
-                <option value="January">January</option>
-                <option value="February">February</option>
-                <option value="March">March</option>
-                <option value="April">April</option>
-                <option value="May">May</option>
-                <option value="June">June</option>
-                <option value="July">July</option>
-                <option value="August">August</option>
-                <option value="September">September</option>
-                <option value="October">October</option>
-                <option value="November">November</option>
-                <option value="december">December</option>
+            <select name="Month" class="months" id="month">
+                <option id="all-mon" value="All-mon">All</option>
+                <option id="jan" value="January">January</option>
+                <option id="feb" value="February">February</option>
+                <option id="mar" value="March">March</option>
+                <option id="apr" value="April">April</option>
+                <option id="may" value="May">May</option>
+                <option id="jun" value="June">June</option>
+                <option id="jul" value="July">July</option>
+                <option id="aug" value="August">August</option>
+                <option id="sep" value="September">September</option>
+                <option id="oct" value="October">October</option>
+                <option id="nov" value="November">November</option>
+                <option id="dec" value="December">December</option>
             </select>
 
         </section>
@@ -191,8 +193,9 @@
         </div> -->
         <div class="arrows-next-prev text-secondary">
             <input type="button" id="first" onclick="firstPage()" value="first" />
-            <input type="button" id="next" onclick="nextPage()" value="next" />
+            
             <input type="button" id="previous" onclick="previousPage()" value="previous" />
+            <input type="button" id="next" onclick="nextPage()" value="next" />
             <input type="button" id="last" onclick="lastPage()" value="last" />
         </div>
 

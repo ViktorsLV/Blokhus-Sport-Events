@@ -31,6 +31,8 @@
     --orange-hover: rgb(240, 190, 134);
 }
 
+
+
 html {
     font-size: 10px;
     overflow-x: hidden;
@@ -1185,7 +1187,9 @@ input[type=text], select {
 }
 
 /* QUERIES START */
-
+.article-preview-grid.hidden {
+    display: none;
+}
 /*Tablet*/
 
 @media screen and (min-width: 768px) and (max-width: 1023px) {
@@ -1270,6 +1274,9 @@ input[type=text], select {
         display: none;
     }
     .events-btn-pc {
+        display: none;
+    }
+    .article-preview-grid.hidden {
         display: none;
     }
 }
@@ -1973,6 +1980,9 @@ input[type=text], select {
         margin-bottom: 5%;
     }
     /*Upcoming Article*/
+    .article-preview-grid.hidden {
+        display: none;
+    }
 }
 
 /* PC */
@@ -2115,7 +2125,12 @@ input[type=text], select {
     .past-event-images img {
         height: 300px;
     }
+    .article-preview-grid.hidden {
+        display: none;
+    }
 }
+
+
 
 
 

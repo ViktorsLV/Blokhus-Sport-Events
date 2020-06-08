@@ -1,7 +1,7 @@
-var slideIndexEvent = 1;
-showDivs(slideIndexEvent);
+/* var slideIndexEvent = 1;
+showDivs(slideIndexEvent); */
 
-function plusDivs(n) {
+/* function plusDivs(n) {
   showDivs(slideIndexEvent += n);
 }
 
@@ -14,5 +14,5 @@ function showDivs(n) {
     x[i].style.display = "none";
   }
   x[slideIndexEvent-1].style.display = "block";
-}
+} */
 

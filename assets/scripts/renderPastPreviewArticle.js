@@ -2,7 +2,7 @@ let pastPreviewSection = document.querySelector("#past-event-grid");
 let pastPreviewList;
 
 function renderPastPreviewArticle(){
-    
+    pastPreviewSection.innerHTML = "";
     pastPreviewList.slice(0,3).forEach(Preview => {
         Preview = findPreviewByIDPast(Preview.id);
         pastPreviewSection.innerHTML += 
@@ -83,9 +83,8 @@ function getPreviewFromWPPast() {
                 pastPreviewList = JSON.parse(this.responseText);
                 renderPastPreviewArticle();
                 seeAllBtnRenderPast();
-                
             } catch (error) {
-                errorMessage(`Error parsing JSON: ${error}`);
+                errorMessage(`Something went wrong, please reload the page`);
             }
         };
         if (this.responseText == 4 && this.status >400){

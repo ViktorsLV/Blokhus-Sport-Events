@@ -85,7 +85,7 @@ function getPreviewFromWP() {
                 seeAllBtnRender();
                 
             } catch (error) {
-                errorMessage(`Error parsing JSON: ${error}`);
+                errorMessage(`Something went wrong, please reload the page`);
             }
         };
         if (this.responseText == 4 && this.status >400){
