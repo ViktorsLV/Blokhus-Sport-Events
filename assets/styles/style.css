@@ -1866,6 +1866,7 @@ input[type=text], select {
     }
     .menu {
         position: absolute;
+        height: max-content;
     }
     .menu .nav-link {
         font-size: 2rem;
