@@ -11,6 +11,8 @@
     <script src="assets/scripts/fetchArticles.js" defer></script>
     <script src="assets/scripts/renderPreviewArticle.js" defer></script>
     <link rel="shortcut icon" href="assets/images/logo.png" type="image/x-icon">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
     <title>Swimming Lessons | Blokhus Sport & Events</title>
 </head>
 
@@ -65,7 +67,7 @@
         </section>
         <section class="explore-grid">
             <div class="element-detail"></div>
-            <article class="article-text">
+            <article class="article-text" data-aos-delay="100" data-aos="fade-up">
                 <h2 class="text-primary">Where can I train?</h2>
                 <p class="text-secondary"> Join us on the very south of Blokhus every tuesday and thursday from 17:00 when the weather is most amazing.<br> <br> Location: Blokhus beach S</p>
             </article>
@@ -80,7 +82,7 @@
         </div>
     </section>
         <!-- EVENT ARTICLES -->
-        <section class="event-grid section-margin">
+        <section class="event-grid section-margin" data-aos-delay="100" data-aos="fade-up">
             <div class="element-detail2"></div>
             <h2 class="text-primary article-h2">Upcoming Events</h2>
             <section class="flex event-box" id="event-grid">
@@ -192,13 +194,13 @@
         <a href="index.html"><img src="assets/images/logo.png" class="logonav mobile-none" alt="Blokhus Sport & Events"></a>   
         <ul class="footer-item navitems mobile-none">
             <li class="border-right"><a href="index.html">HOME</a></li>
-            <span>|</span>
+            <li>|</li>
             <li class="border-right"><a href="upcoming-events.html">UPCOMING&nbsp;EVENTS</a></li>
-            <span>|</span>
+            <li>|</li>
             <li class="border-right"><a href="past-events.html">PAST&nbsp;EVENTS</a></li>
-            <span>|</span>
+            <li>|</li>
             <li class="border-right"><a href="sports.html">SPORTS</a></li>
-            <span>|</span>
+            <li>|</li>
             <li><a href="membership.html">MEMBERSHIP</a></li>
         </ul>
         <div class="footer-icon icons icon-size footer-item">
@@ -211,6 +213,13 @@
             <p>Copyright © 2020</p>
         </div>
     </footer>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+<script>
+    AOS.init();
+    AOS.init({
+        disable: 'mobile'
+    });
+</script>
 </body>
 
 </html>
