@@ -1459,6 +1459,11 @@ input[type=text], select {
         padding: 1% 4%;
         margin: 0 auto;
     }
+
+    .all-btn:hover {
+        background-color: var(--orange-hover);
+    }
+
     .big-btn {
         padding: 1% 7%;
     }
@@ -1485,11 +1490,20 @@ input[type=text], select {
         right: 5px;
         color: var(--white);
     }
-    .sports-grid a:hover, .article-preview-grid a:hover, .event-grid a:hover {
+    .sports-grid .sports-box a:hover {
         transition: all 0.5s;
         color: var(--white);
         background-color: var(--orange-hover);
-        transform: scale(1.1);
+        transform: scale(1.08);
+    }
+
+    .article-preview-grid a:hover, .event-grid a:hover {
+        transition: all 0.5s;
+        /* background-color: rgba(248, 248, 248, 0.598); */
+    }
+
+    .article-preview-grid .article-btn:hover {
+        background-color: var(--orange-hover);
     }
     .sports-grid a:hover span, .article-preview-grid a:hover span, .event-grid a:hover span {
         padding-right: 25px;
@@ -2189,8 +2203,6 @@ input[type=text], select {
         display: none;
     }
 }
-
-
 
 
 
