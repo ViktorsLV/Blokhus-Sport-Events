@@ -1983,7 +1983,7 @@ input[type=text], select {
     }
     /* SPORTS BOX HOVER EFFECT */
     .sports-main .sports a:hover {
-        background-color: var(--orange);
+        background-color: var(--orange-hover);
         color: var(--white);
         transform: scale(1.08);
         transition: all 0.6s;
