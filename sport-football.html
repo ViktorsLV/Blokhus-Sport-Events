@@ -11,6 +11,7 @@
     <script src="assets/scripts/fetchArticles.js" defer></script>
     <script src="assets/scripts/renderPreviewArticle.js" defer></script>
     <link rel="shortcut icon" href="assets/images/logo.png" type="image/x-icon">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <title>Football Team | Blokhus Sport & Events</title>
 </head>
 
@@ -64,7 +65,7 @@
         </section>
         <section class="explore-grid">
             <div class="element-detail"></div>
-            <article class="article-text">
+            <article class="article-text" data-aos-delay="100" data-aos="fade-up">
                 <h2 class="text-primary">Where can I train?</h2>
                 <p class="text-secondary">There are different locations from which you can choose which one is the most convenient for you depending on the weather conditions and where you live. Also, you will be guided by experienced coach whom you can contact for more detailed information and he can guide you through the choices. <br> <br> Location one: Jetsmark Idrætscenter, Pandrup <br> Location two: Jetsmark Stadion, Blokhus <br> Location three: Stenmarksvej 3, Hune </p>
             </article>
@@ -79,7 +80,7 @@
         </div>
     </section>
         <!-- EVENT ARTICLES -->
-        <section class="event-grid section-margin">
+        <section class="event-grid section-margin" data-aos-delay="100" data-aos="fade-up">
             <div class="element-detail2"></div>
             <h2 class="text-primary article-h2">Upcoming Events</h2>
             <section class="flex event-box" id="event-grid">
@@ -217,5 +218,11 @@
 
     </footer>
 </body>
-
+<script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+<script>
+    AOS.init();
+    AOS.init({
+        disable: 'mobile'
+    });
+</script>
 </html>
