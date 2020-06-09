@@ -637,7 +637,7 @@ section.gallery-grid>i {
     background-color: #bbb;
     border-radius: 50%;
     display: inline-block;
-    transition: background-color 0.6s ease;
+    transition: 0.6s ease;
 }
 
 .active, .dot:hover {
@@ -1513,6 +1513,12 @@ input[type=text], select {
     }
     a.grid-line-one:hover {
         background-color: var(--white);
+    }
+
+    .past-article-main .arrow-left:hover, .past-article-main .arrow-right:hover {
+        color: var(--orange-hover);
+        transform: scale(1.2);
+        transition: all 0.5s ease;
     }
     /* SPORT PAGES */
     .sport-volley {
