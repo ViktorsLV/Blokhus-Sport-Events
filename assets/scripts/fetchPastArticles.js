@@ -30,8 +30,8 @@ function renderPastArticle() {
                 <h1 class="sports-text text-primary">${Article.acf.past_title}</h1>
             </section>
             <section>
-                <p class="article-author">Author: ${Article.acf.author}</p>
-                <p class="article-author">Posted on: ${Article.acf.posted_on}</p>
+                <p class="article-author text-secondary">Author: ${Article.acf.author}</p>
+                <p class="article-author text-secondary">Posted on: ${Article.acf.posted_on}</p>
             </section>
             <section class="explore-grid">
                 <div class="element-detail"></div>
