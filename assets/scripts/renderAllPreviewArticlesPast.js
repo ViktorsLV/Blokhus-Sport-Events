@@ -2,7 +2,6 @@ let pastPreviewSection = document.querySelector("#past-event-grid");
 let pastPreviewList;
 
 function renderPastPreviewArticle(){
-    
     pastPreviewList.forEach(Preview => {
         Preview = findPreviewByIDPast(Preview.id);
         pastPreviewSection.innerHTML += 

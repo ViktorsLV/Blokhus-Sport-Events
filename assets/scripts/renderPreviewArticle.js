@@ -2,7 +2,6 @@ let previewSection = document.querySelector("#event-grid");
 let PreviewList;
 
 function renderPreviewArticle(){
-    
     PreviewList.slice(0,3).forEach(Preview => {
         Preview = findArticleByID(Preview.id);
         previewSection.innerHTML += 
@@ -62,6 +61,7 @@ function renderPreviewArticle(){
         </article>
     `;
     });
+    
 };
 
 function seeAllBtnRender(){

@@ -2,7 +2,6 @@ let previewSection = document.querySelector("#event-grid");
 let PreviewList;
 
 function renderPreviewArticle() {
-
     PreviewList.forEach(Preview => {
         Preview = findArticleByID(Preview.id);
         previewSection.innerHTML +=
