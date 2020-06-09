@@ -11,6 +11,8 @@
     <script src="assets/scripts/fetchArticles.js" defer></script>
     <script src="assets/scripts/renderPreviewArticle.js" defer></script>
     <link rel="shortcut icon" href="assets/images/logo.png" type="image/x-icon">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
     <title>Climbing Lessons | Blokhus Sport & Events</title>
 </head>
 
@@ -64,7 +66,7 @@
         </section>
         <section class="explore-grid">
             <div class="element-detail"></div>
-            <article class="article-text">
+            <article class="article-text" data-aos-delay="100" data-aos="fade-up">
                 <h2 class="text-primary">About trainings:</h2>
                 <p class="text-secondary">We have different specialists for each group of climbers- newbies or experts. There is room for everyone - let's popularize climbing!<br> <br> Location: Blokhus Klitplantage <br> Date and time: Every Saturday from 15:00</p>
             </article>
@@ -79,7 +81,7 @@
         </div>
     </section>
         <!-- EVENT ARTICLES -->
-        <section class="event-grid section-margin">
+        <section class="event-grid section-margin" data-aos-delay="100" data-aos="fade-up">
             <div class="element-detail2"></div>
             <h2 class="text-primary article-h2">Upcoming Events</h2>
             <section class="flex event-box" id="event-grid">
@@ -216,6 +218,13 @@
         </div>
 
     </footer>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+<script>
+    AOS.init();
+    AOS.init({
+        disable: 'mobile'
+    });
+</script>
 </body>
 
 </html>
