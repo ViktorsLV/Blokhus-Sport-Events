@@ -29,6 +29,10 @@ function renderPastArticle() {
                 <img class="hero" src="${Article.acf.past_hero_image}" alt="${Article.acf.past_title}">
                 <h1 class="sports-text text-primary">${Article.acf.past_title}</h1>
             </section>
+            <section>
+                <p class="article-author">Author: ${Article.acf.author}</p>
+                <p class="article-author">Posted on: ${Article.acf.posted_on}</p>
+            </section>
             <section class="explore-grid">
                 <div class="element-detail"></div>
                 <article class="article-text">
