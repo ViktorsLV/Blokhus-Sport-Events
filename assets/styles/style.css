@@ -1487,8 +1487,9 @@ input[type=text], select {
     }
     .sports-grid a:hover, .article-preview-grid a:hover, .event-grid a:hover {
         transition: all 0.5s;
+        color: var(--white);
         background-color: var(--orange-hover);
-        /* transform: scale(0.9); */
+        transform: scale(1.1);
     }
     .sports-grid a:hover span, .article-preview-grid a:hover span, .event-grid a:hover span {
         padding-right: 25px;
