@@ -1188,7 +1188,7 @@ input[type=text], select {
 
 /* Animations to fade the snackbar in and out */
 
-@-webkit-keyframes fadein {
+/* @-webkit-keyframes fadein {
     from {
         bottom: 0;
         opacity: 0;
@@ -1197,7 +1197,7 @@ input[type=text], select {
         bottom: 40px;
         opacity: 1;
     }
-}
+} */
 
 @keyframes fadeout {
     from {
