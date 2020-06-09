@@ -503,7 +503,7 @@ video {
 }
 
 .past-article-main .explore-grid {
-    margin-top: 20%;
+    margin-top: 10%;
 }
 
 .past-article-main h1 {
@@ -961,10 +961,10 @@ section.gallery-grid>i {
 }
 
 .article-author {
-    margin-top: 3%;
+    margin-top: 1%;
     text-align: right;
     padding: 0 10%;
-    color: var(--gray);
+    color: var(--dark-gray);
 }
 
 .article-icon-info .grid-i1, .article-icon-info .grid-i2, .article-icon-info .grid-i3, .article-icon-info .grid-i4 {
@@ -1312,7 +1312,7 @@ input[type=text], select {
     }
     /*upcoming article*/
     .article-author {
-        margin-top: 4%;
+        margin-top: 0%;
         z-index: 100;
     }
     .article-grid i {
@@ -1647,7 +1647,7 @@ input[type=text], select {
     }
     .footer-grid ul li {
         list-style: none;
-        margin: 0% 7%;
+        margin: 0% 3%;
     }
     .footer-grid ul {
         list-style: none;
@@ -1659,7 +1659,7 @@ input[type=text], select {
     .footer-icon a:hover {
         color: var(--sand);
     }
-    footer span {
+    footer .footer-line {
         color: var(--orange);
         font-weight: 900;
     }
@@ -1693,7 +1693,8 @@ input[type=text], select {
         display: grid;
         grid-template-columns: 5% 1fr 5% 1fr;
         grid-template-rows: minmax(min-content, max-content);
-        grid-template-areas: 'g-i1 g-p1 g-i2 g-p3''g-i3 g-p2 g-i4 g-p4';
+        grid-template-areas: 'g-i1 g-p1 g-i2 g-p3'
+        'g-i3 g-p2 g-i4 g-p4';
     }
     .grid-p1 {
         grid-area: g-p1;
@@ -1752,7 +1753,8 @@ input[type=text], select {
         margin-bottom: 3%;
     }
     .article-author {
-        margin-top: 2%;
+        margin-top: 0%;
+        
     }
     .pc-grid-map {
         display: grid;
@@ -2207,6 +2209,11 @@ input[type=text], select {
     }
     .article-preview-grid.hidden {
         display: none;
+    }
+
+    .article-author {
+        margin-top: 0%;
+        padding: 0 15%;
     }
 }
 

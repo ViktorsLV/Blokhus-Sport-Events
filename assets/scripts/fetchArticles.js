@@ -39,8 +39,8 @@ function renderArticle(){
     
             <div class="article-icon-info">
                 <p><i class="fas fa-calendar-alt grid-i1"></i></p>
-                <p><i class="fas fa-dollar-sign grid-i2"></i></p>
-                <p><i class="fas fa-map-marker-alt grid-i3"></i></p>
+                <p><i class="fas fa-map-marker-alt grid-i2"></i></p>
+                <p><i class="fas fa-dollar-sign grid-i3"></i></p>
                 <p><i class="fas fa-clock grid-i4"></i></p>
                 <p class="grid-p1">Date: ${Article.acf.date}</p>
                 <p class="grid-p2">Price: ${Article.acf.price}</p>
