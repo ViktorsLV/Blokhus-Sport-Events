@@ -227,6 +227,7 @@ ul.menu-nav.show, a.menu-logo.show {
     display: none;
     min-width: 200px;
     background-color: var(--blue);
+    font-weight: 400;
 }
 
 .nav-dropdown-item {
@@ -377,7 +378,7 @@ video {
 }
 
 .picsport {
-    background-image: url(../images/Web\ 1920\ –\ 1.jpg);
+    background-image: url(../images/sportPageBackground.jpg);
     background-repeat: no-repeat;
     background-size: cover;
 }
@@ -1522,28 +1523,28 @@ input[type=text], select {
     }
     /* SPORT PAGES */
     .sport-volley {
-        background-image: url(../images/volleyball\ background.jpg);
+        background-image: url(../images/volleyballBackground.jpg);
     }
     .sport-football {
-        background-image: url(../images/football\ background.jpg);
+        background-image: url(../images/footballBackground.jpg);
     }
     .sport-handball {
-        background-image: url(../images/handball\ background.jpg);
+        background-image: url(../images/handballBackground.jpg);
     }
     .sport-running {
-        background-image: url(../images/running\ background.jpg);
+        background-image: url(../images/runningBackground.jpg);
     }
     .sport-swimming {
-        background-image: url(../images/swimming\ background.jpg);
+        background-image: url(../images/swimmingBackground.jpg);
     }
     .sport-horse {
-        background-image: url(../images/horse\ riding\ \ background.jpg);
+        background-image: url(../images/horseRidingBackground.jpg);
     }
     .sport-biking {
-        background-image: url(../images/mountain\ biking\ background.jpg);
+        background-image: url(../images/mountainBikingBackground.jpg);
     }
     .sport-climbing {
-        background-image: url(../images/climbing\ background.jpg);
+        background-image: url(../images/climbingBackground.jpg);
     }
     .sport-volley, .sport-biking, .sport-swimming, .sport-football, .sport-handball, .sport-running, .sport-horse, .sport-climbing {
         background-repeat: no-repeat;
@@ -1926,6 +1927,13 @@ input[type=text], select {
         padding: 2% 10%;
         width: 33%;
     }
+
+    .membership-body .membership-btn.mobile-none  {
+        padding: 2% 4%;
+        align-self: center;
+        width: 33%;
+    }
+
     .membership-btn {
         margin: 5% 0 0 0;
         font-size: 1.4rem;
@@ -2225,3 +2233,5 @@ input[type=text], select {
 /* Icons provided by Font Awesome */
 
 /* Animations provided by AOS animation gallery; Available at https://github.com/michalsnik/aos  for free use*/
+
+/*Images of people in testimonials - https://thispersondoesnotexist.com/ */
