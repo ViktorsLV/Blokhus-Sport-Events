@@ -138,3 +138,5 @@ function showDivs(n) {
     }
     x[slideIndexEvent - 1].style.display = "block";
 }
+
+/*Source for slider code - https://www.w3schools.com/howto/howto_js_slideshow.asp */
