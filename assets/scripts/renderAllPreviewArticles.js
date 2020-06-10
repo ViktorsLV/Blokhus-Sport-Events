@@ -95,7 +95,7 @@ let months = document.querySelector(".months");
 
 
 category.addEventListener('change', function () {
-    let option = category.options[category.selectedIndex].value;
+    let option = category.options[category.selectedIndex].value; //Source for this line https://stackoverflow.com/questions/6573597/html-javascript-dropdown-selectedindex
     let allArticles = document.querySelectorAll(".article-preview-grid");
     /* console.log(event + "I am selected"); */
     allArticles.forEach(individualArticle => {
@@ -142,7 +142,7 @@ category.addEventListener('change', function () {
 });
 
 months.addEventListener('change', function () {
-    let option = months.options[months.selectedIndex].value;
+    let option = months.options[months.selectedIndex].value; //Source for this line https://stackoverflow.com/questions/6573597/html-javascript-dropdown-selectedindex
     let allArticles = document.querySelectorAll(".article-preview-grid");
     /* console.log(event + "I am selected"); */
     allArticles.forEach(individualArticle => {
